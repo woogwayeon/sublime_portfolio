@@ -1,0 +1,102 @@
+/* em color */
+
+.m-html{ color: #69f266; }
+.m-js{ color: #F7DF1E; }
+.m-figma{ color: #DD94FF; }
+.m-psd{ color: #00A3FF; }
+.annotation{ opacity: 0.5; font-style: italic; }
+.m-para-em{ font-weight: 700; color: #ff9fd9; }
+
+
+/* modal style */
+
+@keyframes m-motion{
+	0%{ opacity: 0; }
+	100%{ opacity: 1; }
+}
+
+.doit{
+	position: fixed; 
+	top: 15%; left: 25%;
+	width: 1020px; height: 560px;
+	background: #444;
+	border: 1px solid #fff;
+	border-radius: 10px;
+	z-index: 99999;
+	box-shadow: 0 0 0px rgba(0, 0, 0, 0.7);
+	transition: opacity 0.3s;
+	opacity: 1;
+	animation: m-motion 0.5s;
+}
+
+.doit .heading{
+	display: flex;
+	align-items: center;
+	width: 92%; height: 80px;
+	margin: 0 auto;
+	border-bottom: 1px solid #fff;
+	margin-bottom: 25px;
+}
+
+.doit .heading img{
+	width: 30px;
+	padding-right: 15px;
+}
+
+.doit .heading p{
+	padding-top: 5px;
+	font: 700 26px 'Lato, Noto Sans KR';
+	color: #fff;
+	letter-spacing: 0.7px;
+}
+
+.doit .para{
+	width: 94%; 
+	padding-left: 30px;
+/*	border: 1px solid cyan;*/
+	height: 64%;
+	overflow: auto;
+	margin: 0 auto;
+}
+
+.doit .para p{
+	font: 300 20px 'Lato, Noto Sans KR';
+	color: #fff;
+	padding-bottom: 26px;
+}
+
+.para::-webkit-scrollbar {
+	width: 5px; /*스크롤바의 너비*/
+	padding: 5px;
+}
+.para::-webkit-scrollbar-thumb {
+ 	background-color: #222; /*스크롤바의 색상*/	
+ 	border-radius: 10px;
+}
+ 
+.para::-webkit-scrollbar-track {
+	background-color: none; /*스크롤바 트랙 색상*/
+	opacity: 0;
+}
+
+.done{
+	width: 185px; height: 54px;
+	margin: 0 auto;
+	background: none;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	font: 500 24px 'Noto Sans KR';
+	color: #fff;
+	text-align: center;
+	line-height: 52px;
+	transition: 0.5s;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.done:hover{ background-color: rgba(255, 255, 255, 0.5); }
+
+
+
+
+
