@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>works_guardians</title>
+<!-- Google Fonts : Lato -->
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+<!-- Google Fonts : Noto Sans KR -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="css/sub-main.css">
+
+<!-- 파비콘 -->
+<link rel="icon" href="images/icon/sublime-icon-pav.png">
+</head>
+<body>
+
+
+<div id="modal-contact">
+	<div class="inner">
+		<div class="heading">
+			<div>
+				<img src="images/icon/mail-icon.svg" alt="연락처를 알려드릴게요">
+				<p>Easy Contect !</p>
+			</div>
+		</div>
+ 	
+	 	<div class="con-area">
+			<div class="call">
+				<div class="call-para">
+					<p>E-mail</p>
+					<p>woogwayeon&#64;icloud.com</p>
+				</div>
+
+				<div class="call-para">
+					<p>Cell Phone</p>
+					<p>010 - 5244 - 0835</p>
+				</div>
+
+				<a href="https://woogwayeon.github.io/sublime_portfolio/#design" target="_blank">
+					<div class="contect">
+						<p>프로필 자세히 보러가기</p>
+						<img src="images/icon/arrow-open-icon.svg" alt="열기">
+					</div>
+				</a>
+			</div>
+
+			<div class="img">
+				<img src="images/face2.png" alt="프로필사진" class="face2">
+			</div>
+		</div>	
+
+		<div class="button">
+			닫기
+		</div>
+
+	</div>
+</div>
+
+
+<div id="wrap">
+	
+<div id="quick-bar">
+	<div class="inner">
+		<img src="images/icon/close-icon.svg" alt="창 닫기" onclick="window.close();">
+		<a href="https://woogwayeon.github.io/marvel/" target="_blank">
+			<img src="images/icon/open-window-icon.svg" alt="브라우저에서 창 열기">
+		</a>
+		<img src="images/icon/call-icon.svg" alt="연락처 확인하기" class="open-contect">
+	</div>
+</div>
+
+<script>
+	const openMod = document.querySelector('.open-contect')
+	const callModal = document.querySelector('#modal-contact');
+	const face2 = document.querySelector('.face2');
+	const closeM = document.querySelector('.button');
+
+	callModal.style.display="none";
+
+	openMod.addEventListener("click", function(){
+		callModal.style.display="block";
+		callModal.style.animation="m-animation 0.5s";
+		face2.style.animation="face 3s"
+	})
+
+	closeM.addEventListener('click',()=>{
+		callModal.style.display="none";
+	})
+
+</script>
+
+<div id="visual">
+	<div class="inner">
+		<div class="mac">
+			<div class="mask">
+				<img src="images/mockup/gog3.jpg" alt="" class="mac-window">
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	const gall = document.querySelector(".mask")
+	const img = document.querySelector(".mac-window")
+	const tempItem = img.cloneNode(true);
+
+	gall.appendChild(tempItem);
+
+		
+	let y = 0;
+
+	function slideGall(){
+		
+
+		y = y - 1;
+
+		if( y < -(4096-560) ){ y=0; }
+
+		if( y > 0 ){ y= -(4096-560); }
+
+		img.style.top=y+"px";
+	}
+
+	setInterval(slideGall, 40);
+
+</script>
+
+<article id="con-wrap">
+
+	<header id="header">
+		<div class="inner">
+			<h1>Guardians Of The Galaxy  3</h1>
+			<p>Main + Sub(Character) Page Publishing</p>
+		</div>
+	</header>
+
+	<section id="preview">
+
+		<div class="inner">
+			<div class="f-line">
+				<div class="design-tool">
+					<h3>Design Tool</h3>
+					<div class="icon-set">
+						<img src="images/icon/figma-icon.svg" alt="figma">
+						<p>Figma</p>
+					</div>
+				</div>
+				<div class="lang">
+					<h3>Use Language</h3>
+					<div class="icon-set">
+						<img src="images/icon/html5.svg" alt="HTML5">
+						<p>HTML5</p>
+					</div>
+					<div class="icon-set">
+						<img src="images/icon/css3.svg" alt="CSS3">
+						<p>CSS3</p>
+					</div>
+					<div class="icon-set">
+						<img src="images/icon/js-icon.svg" alt="JavaScript ES6">
+						<p>JavaScript</p>
+					</div>
+				</div>
+				<div class="contribution">
+					<h3>Contribution</h3>
+					<p>100%</p>
+					<p>Solo Proudct</p>
+				</div>
+			</div>
+
+			<div class="s-line">
+				<div class="period">
+					<h3>Production Period</h3>
+					<div class="para-set">
+						<p>Design</p>
+						<p>2 Days</p>
+					</div>
+					<div class="para-set">
+						<p>Publishing</p>
+						<p>2 Days</p>
+					</div>
+				</div>
+				<div class="setting">
+					<h3>Design Setting</h3>
+					<div class="para-set">
+						<p>Fonts</p>
+						<p>Roboto</p>
+					</div>
+					<div class="colorchips">
+						<p>Colors</p>
+						<div class="c-circle">	
+							<div class="icon-set">
+								<img src="images/color/222.svg" alt="figma">
+								<p>&#35;222222</p>
+							</div>
+							<div class="icon-set">
+								<img src="images/color/CC4E38-gog.svg" alt="figma">
+								<p>&#35;CC4E38</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<section id="overview">
+		<div class="inner">
+			<h2>Overview Point</h2>
+
+			<div class="para">
+				<p>Mark-up 작업 시 sementic Tag를  이용하여 코드 가독성을 높이고, 차후 수정 시 용이하게  제작했습니다.</p>
+				<p>웹 표준을 준수하며 모의 검사를 통해 한번 더 웹 게시에 적합한 지 확인했습니다.</p>
+				<p>
+					Skip Navigation 기능을 구현하여 키보드 접근성을 높였으며,
+					부가 설명이 필요한 기능에는 Blind Class를 선언하여 시/청각 접근성 또한 고려하였습니다.
+				</p>
+				<p>CSS transition, hover를 사용하여 GNB 구현하였습니다.</p>
+				<p>
+					사용자가 링크 이동 페이지를 쉽게 이해할 수 있도록 CSS transform 속성값인 scale과 agba의 alpha값을 이용하여
+					이미지에 효과를 넣었습니다.
+				</p>
+				<p>
+					Youtube와 Spotify의 소스코드를 홈페이지 내에 삽입하여 사용자가 2차 검색 없이 해당 페이지를 즐길 수 있도록
+					제작하였습니다.
+				</p>
+				<p>JavaScript의 forEach문과 addEventListener함수를 활용하여 Tab메뉴를 구현하였습니다.</p>
+				<p>
+					Modal 제작 시 JavaScript로 창 닫기를 제어가 가능한 로직을 세웠으며,
+					화면 하단에 배치할 때 CSS animation 효과를 사용해 슬라이딩하여 올라오는 모습을 구현했습니다.
+				</p>			
+				<p>캐릭터 카드에 마우스를 over했을 시, 글자색 전환과 함께  scale값을 할당하여 카드 클릭을 유도하였습니다.</p>
+				<p>
+					addEventListenter의 click event를 이용하여 캐릭터 카드의 설명을 확인한 후 창을 원래대로
+					돌려놓을 수 있도록  제작하였습니다.
+				</p>	
+			</div>
+			<div class="btn">
+				<a href="http://woogwayeon.dothome.co.kr/marvel" target="_blank">
+					<div class="inner">
+						<p>브라우저에서 확인하기</p>
+						<img src="images/icon/arrow-open-icon.svg" alt="브라우저에서 작업물 확인하기">
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section id="layout">
+		<h2>Layout</h2>
+		<div class="layout-img">
+			<img src="images/mockup/gog3-layout-01.jpg" alt="메인페이지 레이아웃 구조를 나타낸 그림입니다 헤더, 비주얼, 컨텐츠, 푸터가 세로배열 되어있습니다.">
+			<img src="images/mockup/gog3-layout-02.jpg" alt="서브페이지 레이아웃 구조를 나타낸 그림입니다 헤더, 서브메인과 비주얼을 함께 합친 뒤 컨텐츠 부분이 이어집니다. 푸터까지 모든 블록은 세로배열 되어있습니다.">
+		</div>
+	</section>
+
+</article>
+
+<footer id="footer">
+	<div class="f-inner"></div>
+</footer>
+
+</div>
+
+</body>
+</html>
