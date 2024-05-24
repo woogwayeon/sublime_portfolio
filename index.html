@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>hello portfolio</title>
+
+<!-- Google Fonts : IBM Plex Mono -->
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Google Fonts : Lato -->
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+<!-- Google Fonts : Noto Sans KR -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/modal.css">
+<link rel="stylesheet" href="css/mediaquery.css">
+
+<!-- 파비콘 -->
+<link rel="icon" href="images/icon/sublime-icon-pav.png">
+</head>
+<body>
+
+<header id="header">
+	<div class="top-hd">
+		<div class="inner">
+			<h1><img src="images/icon/sublime-icon.png" alt="sublime portfolio"></h1>
+			<p>seoyeon - sublime text <span class="hd-point-size">&#40;PORTFOLIO&#41;</span></p>
+		</div>
+	</div>
+	<ul class="tab-hd">
+		<li>&nbsp;
+			<img src="images/icon/top-nav.svg" alt="">
+		</li>
+		<li>
+			<a href="index.html" data-top="0" class="main-tab">
+				<p>index.html</p>
+				<img src="images/icon/top-nav.svg" alt="" class='icon'>
+				<img src="images/icon/tab-colline.svg" alt="" class="colline">
+			</a>
+		</li>
+		<li>
+			<a href="#works" data-top="1" class="main-tab">
+				<p>works.html</p>
+				<img src="images/icon/top-nav.svg" alt="" class='icon'>
+				<img src="images/icon/tab-colline.svg" alt="" class="colline">
+			</a>
+		</li>
+		<li>
+			<a href="#design" data-top="2" class="main-tab">
+				<p>design.css</p>
+				<img src="images/icon/top-nav.svg" alt="" class='icon'>
+				<img src="images/icon/tab-colline.svg" alt="" class="colline">
+			</a>
+		</li>
+		<li>
+			<a href="#profile" data-top="3" class="main-tab">
+				<p>profile.json</p>
+				<img src="images/icon/top-nav.svg" alt="" class='icon'>
+				<img src="images/icon/tab-colline.svg" alt="" class="colline">
+			</a>
+		</li>
+	</ul>
+</header>
+
+<div class="position-area">&nbsp;</div>
+
+<article id="wrap">
+
+	<nav>
+		<ul class="sidebar">
+
+			<li class="side-para sp01">OPEN FILES</li>
+			<li class="side-para sp02">FOLDERS</li>
+			<li class="side-para sp03">
+				<img src="images/icon/folder.svg" alt="main-folder">
+				<p>Portfolio</p>
+			</li>
+
+			<li class="side01 main-side">
+				<a href="index.html" data-side="0">
+					<img src="images/icon/html5.svg" alt="main visual page">
+					<p>index.html</p>
+				</a>
+			</li>
+			<li class="side02 main-side">
+				<a href="#works" data-side="1">
+					<img src="images/icon/html5.svg" alt="publishing works page">
+					<p>works.html</p>
+				</a>
+			</li>
+			<li class="side03 main-side">
+				<a href="#design" data-side="2">
+					<img src="images/icon/css3.svg" alt="design works page">
+					<p>design.css</p>
+				</a>
+			</li>
+			<li class="side04 main-side">
+				<a href="#profile" data-side="3">
+					<img src="images/icon/json-icon.png" alt="profile page">
+					<p>profile.json</p>
+				</a>
+			</li>
+		
+		</ul>
+	</nav>
+
+
+	<div class="con-area">
+
+		<section id="visual" class="main-content">		
+			<div class="visual-inner">
+				<p>&lt;<span class="att">head</span>&gt;</p>
+				<p>&lt;<span class="att">title</span>&gt;</p>
+				<p class="writing"></p>
+				<p>&lt;&#47;<span class="att">title</span>&gt;</p>
+				<p>&lt;&#47;<span class="att">head</span>&gt;</p>
+			</div>
+		</section>
+
+		<!-- 타이핑 플러그인 -->
+		<script src="https://www.cssscript.com/demo/simple-typewriter-effect-pure-javascript-typewriterjs/typewriter.js"></script>
+		<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+		<script>
+			let typeW = document.querySelector('.writing');
+			let typewriter = new Typewriter(typeW, {
+				loop:false
+			});
+
+			typewriter
+				.pauseFor(2250)
+				.typeString("Hello,")
+				.pauseFor(400)
+				.typeString("Portfolio")
+				.start();
+		</script>
+
+		<section id="works" class="main-content">
+			<h2>
+				&lt;<span class='att'> article</span>
+				<span class='property'>id</span>&#61;
+				&ldquo;<span class='value'>works</span>&rdquo;
+				&gt;
+			</h2>
+			
+			<div class="card">
+
+				<div class="works-card c01">
+					<a href="sub-works.html" target="_blank">
+						<div class="con-card-img">
+							<img src="images/con-card/flower.jpg" alt="">
+						</div>
+						<div class="con-card-logo">
+							<img src="images/logo/flower-logo.png" alt="">
+						</div>
+						<div class="card-mouse-over">
+							<p class="explain-hd">
+								Full Site publishing
+							</p>
+							<p class="explain-para">
+								HTML, CSS, JavaScript
+							</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="works-card c02">
+					<a href="sub-works.html" target="_blank">
+						<div class="con-card-img">
+							<img src="images/con-card/sparco.jpg" alt="">
+						</div>
+						<div class="con-card-logo">
+							<img src="images/logo/sparco-logo.svg" alt="">
+						</div>
+						<div class="card-mouse-over">
+							<p class="explain-hd">
+								Responsive Web
+							</p>
+							<p class="explain-para">
+								Media Query &amp; Swiper Carousel
+							</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="works-card c03">
+					<a href="sub-works.html" target="_blank">
+						<div class="con-card-img">
+							<img src="images/con-card/gog3.jpg" alt="">
+						</div>
+						<div class="con-card-logo">
+							<img src="images/logo/gog-logo.png" alt="">
+						</div>
+						<div class="card-mouse-over">
+							<p class="explain-hd">
+								Main &amp; Sub page publishing
+							</p>
+							<p class="explain-para">
+								youtube, spotify embeding
+							</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="works-card c04">
+					<a href="sub-works.html" target="_blank">
+						<div class="con-card-img">
+							<img src="images/con-card/sony.jpg" alt="">
+						</div>
+						<div class="con-card-logo">
+							<img src="images/logo/sony-logo.png" alt="">
+						</div>
+						<div class="card-mouse-over">
+							<p class="explain-hd">
+								Shopping-cart
+							</p>
+							<p class="explain-para">
+								table TAG practical useing
+							</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="works-card c05">
+					<a href="sub-works.html" target="_blank">
+						<div class="con-card-img">
+							<img src="images/con-card/responsive.jpg" alt="">
+						</div>
+						<div class="con-card-logo">
+							<p>Responsive Web</p>
+						</div>
+						<div class="card-mouse-over">
+							<p class="explain-hd">
+								Responsive Web
+							</p>
+							<p class="explain-para">
+								Media Query &amp; CSS transition
+							</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="works-card continue">
+					<div class="continue-text">
+						<p>o&#40;&#42;&#94;&#64;&#94;&#42;&#41;o</p>
+						<p class="s">To Be Continue</p>
+					</div>
+				</div>
+			</div>
+
+			<h2>&lt;&#47;<span class="att">article</span>&gt;</h2>
+		</section>
+
+		<!-- 카드 설명 올라오는 박스 script -->
+		<script>
+			const worksCard = document.querySelectorAll('.works-card');
+			const cardOver = document.querySelectorAll('.card-mouse-over');
+			const items = [1, 2, 3, 4, 5];
+
+			cardOver.forEach(n=>{n.style.bottom='-200px'});
+
+			for(let i = 0; i < items.length; i++) {
+    			
+    			console.log(items[i]);
+
+				worksCard[i].addEventListener('mouseover', function(){
+					cardOver[i].style.bottom=0
+				});
+				worksCard[i].addEventListener('mouseout', function(){
+					cardOver[i].style.bottom='-200px'
+				});
+			}
+		</script>
+
+		<section id="design" class="main-content">
+			<h2>
+				<span class='css-id'>&#35;design</span>
+				&#123; <!-- { -->
+				<span class='property'>display</span>
+				&#58; <!-- : -->
+				<span class='value'>block</span>
+				&#125; <!-- } -->
+			</h2>
+			
+			<div class="card">
+
+				<div class="design-card d01">
+					<a href="sub-jellycat.html" target="_blank">
+						<div class="con-card-img">
+							<img src="images/con-card/jellycat.jpg" alt="">
+						</div>
+						<div class="con-card-logo">
+							<img src="images/logo/jelly-logo.png" alt="">
+						</div>
+						<div class="design-mouse-over">
+							<p class="explain-hd">
+								Mobile design
+							</p>
+							<p class="explain-para">
+								Main &amp; Sub page design, Figma
+							</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="design-card d02">
+					<a href="sub-uniqlo.html" target="_blank">
+						<div class="con-card-img">
+							<img src="images/con-card/uniqlo.jpg" alt="">
+						</div>
+						<div class="con-card-logo">
+							<img src="images/logo/uni-logo.png" alt="">
+						</div>
+						<div class="design-mouse-over">
+							<p class="explain-hd">
+								Website Redesign
+							</p>
+							<p class="explain-para">
+								Main &#43; Select page design, Photoshop
+							</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="design-card d03">
+					<a href="sub-star.html" target="_blank">
+						<div class="con-card-img">
+							<img src="images/con-card/star2.jpg" alt="">
+						</div>
+						<div class="con-card-logo">
+							<img src="images/logo/star2-logo.png" alt="">
+						</div>
+						<div class="design-mouse-over">
+							<p class="explain-hd">
+								Module Grid
+							</p>
+							<p class="explain-para">
+								Website Mainpage Redesign, Photoshop
+							</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="design-card d04">
+					<a href="sub-decca.html" target="_blank">
+						<div class="con-card-img">
+							<img src="images/con-card/decca.jpg" alt="">
+						</div>
+						<div class="con-card-logo">
+							<img src="images/logo/decca-logo.svg" alt="">
+						</div>
+						<div class="design-mouse-over">
+							<p class="explain-hd">
+								Column Grid
+							</p>
+							<p class="explain-para">
+								Website Mainpage Redesign, Photoshop
+							</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="design-card d05">
+					<a href="sub-baz.html" target="_blank">
+						<div class="con-card-img">
+							<img src="images/con-card/bazaar.jpg" alt="">
+						</div>
+						<div class="con-card-logo">
+							<img src="images/logo/bazaar-logo.svg" alt="">
+						</div>
+						<div class="design-mouse-over">
+							<p class="explain-hd">
+								Website main
+							</p>
+							<p class="explain-para">
+								Website Mainpage Redesign, Photoshop
+							</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="design-card d06">
+					<a href="sub-works.html" target="_blank">
+						<div class="con-card-img">
+							<img src="images/con-card/poster.jpg" alt="">
+						</div>
+						<div class="con-card-logo">
+							<p>Poster &amp; Typo</p>
+						</div>
+						<div class="design-mouse-over">
+							<p class="explain-hd">
+								Typography
+							</p>
+							<p class="explain-para">
+								Tradition Poster, Using Design tool
+							</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- design card explain -->
+		<script>
+			
+			const designCard = document.querySelectorAll('.design-card');
+			const designOver = document.querySelectorAll('.design-mouse-over');
+			const dItems = [1, 2, 3, 4, 5, 6];
+
+			designOver.forEach(n=>{n.style.bottom='-200px'});
+
+			for(let i = 0; i < dItems.length; i++) {
+    			
+    			console.log(items[i]);
+
+				designCard[i].addEventListener('mouseover', function(){
+					designOver[i].style.bottom=0
+				});
+				designCard[i].addEventListener('mouseout', function(){
+					designOver[i].style.bottom='-200px'
+				});
+			}
+		</script>
+
+		<section id="profile" class="main-content">
+			<h2>&#123;</h2>
+
+				<div class="profile-inner">
+
+					<div class="about">
+						<div class="image">
+							<img src="images/face-cir.svg" alt="미모티콘 프로필">
+						</div>
+						<div class="info">
+							<h3>
+								<span class="att">&ldquo;Profile&rdquo;</span> 
+								<span class="json-mark">&#58;&#91;</span>
+							</h3>
+							<h3><span class="json-mark">&#123;</span></h3>
+							<p><span class="value">Name</span> &nbsp;&#58;&nbsp; 고은아 <span class="json-mark-s">, </span></p>
+							<p><span class="value">Phone</span> &nbsp;&#58;&nbsp; 010 5244 0835 <span class="json-mark-s">, </span></p>
+							<p><span class="value">E-mail</span> &nbsp;&#58;&nbsp; woogwayeon&#64;icloud.com <span class="json-mark-s">, </span></p>
+							<p><span class="value">Birth</span> &nbsp;&#58;&nbsp; 1999. 08. 05 <span class="json-mark-s">, </span></p>
+							<p><span class="value">Address</span> &nbsp;&#58;&nbsp; 서울 강북구 <span class="json-mark-s">, </span></p>
+							<p><span class="value">License</span> &nbsp;&#58;&nbsp; 웹디자인기능사, GTQ / GTQi 1급 <span class="json-mark-s">, </span></p>
+							<p><span class="value">Portfolio</span> &nbsp;&#58;&nbsp; woogwayeon.dothome.co.kr <span class="json-mark-s">, </span></p>
+							<h3><span class="json-mark">&#125;</span></h3>
+							<h3><span class="json-mark">&#93;</span></h3>
+						</div>
+					</div>
+
+					<div class="ability">
+						<div class="ability-para">
+							<h3>
+								<span class="att">&ldquo;Ability&rdquo;</span> 
+								<span class="json-mark">&#58;&#91;&nbsp;</span>
+							</h3>
+							<p>	
+								<span class="json-mark-s">&nbsp;&nbsp;&#123;&nbsp;</span>
+								<span class="value">&nbsp;Tip&nbsp;</span>
+								&nbsp;&#58;&nbsp; 
+								카드를 클릭하면 기술에 대한 제 수준을 보다 자세히 확인하실 수 있어요&#33;
+								<span class="json-mark-s">&nbsp;&#125;&nbsp;</span>
+							</p>
+						</div>
+
+						<div class="ability-card-wrap">
+							<div class="a-card">
+								<div class="a-img">
+									<img src="images/icon/html5.svg" alt="html5">
+								</div>
+								<div class="a-heading">
+									<p>HTML 5</p>
+								</div>
+							</div>
+							<div class="a-card">
+								<div class="a-img">
+									<img src="images/icon/css3.svg" alt="css3">
+								</div>
+								<div class="a-heading">
+									<p>CSS 3</p>
+								</div>
+							</div>
+							<div class="a-card">
+								<div class="a-img">
+									<img src="images/icon/js-icon.svg" alt="JavaScript ES6">
+								</div>
+								<div class="a-heading">
+									<p>JavaScript</p>
+								</div>
+							</div>
+							<div class="a-card">
+								<div class="a-img">
+									<img src="images/icon/figma-icon.svg" alt="Figma" class="figma-icon">
+								</div>
+								<div class="a-heading">
+									<p>Figma</p>
+								</div>
+							</div>
+							<div class="a-card">
+								<div class="a-img">
+									<img src="images/icon/psd-icon.svg" alt="Photoshop">
+								</div>
+								<div class="a-heading">
+									<p>Photoshop</p>
+								</div>
+							</div>
+							<div class="a-card">
+								<div class="a-img">
+									<img src="images/icon/ai-icon.svg" alt="illustrator">
+								</div>
+								<div class="a-heading">
+									<p>illustrator</p>
+								</div>
+							</div>
+						</div>
+
+						<h3><span class="json-mark">&nbsp;&nbsp;&nbsp;&#93;</span></h3>
+					</div>
+
+					<div class="character">
+						<div class="chracter-para">
+							<h3>
+								<span class="att">&ldquo;Character&rdquo;</span> 
+								<span class="json-mark">&#58;&nbsp;&ldquo;&nbsp;</span>
+							</h3>
+							<p>
+								저는 어쩌구인 사람이며 어쩌구를 중요시하고 어쩌구 저쩌구 입니다 항상 열심히 하는 자세를 어쩌고 저쩌고 어쩌구 팀소통 블라블라 그리고 샬라샬라.. 좋은게 좋은거고 뭐쩌고 블라블라 쓰고 아무튼 한 3줄이내로 적기
+							</p>
+							<h3><span class="json-mark">&rdquo;</span></h3>
+						</div>
+
+					</div>
+
+					<!-- HTML Ability -->
+					<div class="doit">
+						
+						<div class="heading">
+							<img src="images/icon/dev-icon.svg" alt="develog modal icon">
+							<p><span class="m-html">HTML</span>을 이용해서 이런 일을 할 수 있어요</p>
+						</div>
+						<div class="para">
+							<p>Basic HTML Tag를 사용하여 <span class="m-para-em">Web, Mobile markup</span></p>
+							<p>HTML tag에 <span class="m-para-em">CSS &#47; JS mouse event 연계</span>하여 웹 및 모바일 페이지 동작 구현 </p>
+							<p>&lt;ul&gt;, &lt;li&gt; Tag 목록 정렬 및 웹 페이지 구조 응용 활용</p>
+							<p>&lt;table&gt; Tag 활용하여 게시판 및 장바구니 페이지 제작</p>
+							<p>&lt;iframe&gt; 연결을 통해 외부 소스를 홈페이지 내로 임베드 <span class="annotation">&lt; &#33;-- 유투브, 스포티파이 등 -- &gt;</span></p>
+							<p>Web fonts 및 web icon 삽입</p>
+							<p>선택자를 이용하여 <span class="m-para-em">웹 접근성</span> 구현 <span class="annotation">&lt; &#33;-- skip navigation, blind 처리 등 -- &gt;</span></p>
+							<p>Semantic Tag 사용으로 코드 가독성 및 효율성 증가</p>
+							<p>&lt;img&gt;, &lt;map name=&ldquo; &rdquo;&gt;, &lt;area&gt; Tag 이용하여 이미지맵 제작</p>
+							<p>&lt;fieldset&gt;, &lt;legend&gt;, &lt;form&gt;, &lt;label&gt; 사용하여 <span class="m-para-em">Login, out 및 submit 폼 제작</span> 가능</p>
+						</div>
+						<div class="done">
+							닫기
+						</div>
+					
+					</div>
+
+					<!-- CSS Ability -->
+					<div class="doit">
+						
+						<div class="heading">
+							<img src="images/icon/dev-icon.svg" alt="develog modal icon">
+							<p><span class="att">CSS</span> 이용해서 이런 일을 할 수 있어요</p>
+						</div>
+						<div class="para">
+							<p>Basic HTML Tag를 사용하여 <span class="m-para-em">Web, Mobile markup</span></p>
+							<p>HTML tag에 <span class="m-para-em">CSS &#47; JS mouse event 연계</span>하여 웹 및 모바일 페이지 동작 구현 </p>
+							<p>&lt;ul&gt;, &lt;li&gt; Tag 목록 정렬 및 웹 페이지 구조 응용 활용</p>
+							<p>&lt;table&gt; Tag 활용하여 게시판 및 장바구니 페이지 제작</p>
+							<p>&lt;iframe&gt; 연결을 통해 외부 소스를 홈페이지 내로 임베드 <span class="annotation">&lt; &#33;-- 유투브, 스포티파이 등 -- &gt;</span></p>
+							<p>Web fonts 및 web icon 삽입</p>
+							<p>선택자를 이용하여 <span class="m-para-em">웹 접근성</span> 구현 <span class="annotation">&lt; &#33;-- skip navigation, blind 처리 등 -- &gt;</span></p>
+							<p>Semantic Tag 사용으로 코드 가독성 및 효율성 증가</p>
+							<p>&lt;img&gt;, &lt;map name=&ldquo; &rdquo;&gt;, &lt;area&gt; Tag 이용하여 이미지맵 제작</p>
+							<p>&lt;fieldset&gt;, &lt;legend&gt;, &lt;form&gt;, &lt;label&gt; 사용하여 <span class="m-para-em">Login, out 및 submit 폼 제작</span> 가능</p>
+						</div>
+						<div class="done">
+							닫기
+						</div>
+					
+					</div>
+
+					<!-- JavaScript Ability -->
+					<div class="doit">
+						
+						<div class="heading">
+							<img src="images/icon/dev-icon.svg" alt="develog modal icon">
+							<p><span class="m-js">JavaScript</span>를 이용해서 이런 일을 할 수 있어요</p>
+						</div>
+						<div class="para">
+							<p>Basic HTML Tag를 사용하여 <span class="m-para-em">Web, Mobile markup</span></p>
+							<p>HTML tag에 <span class="m-para-em">CSS &#47; JS mouse event 연계</span>하여 웹 및 모바일 페이지 동작 구현 </p>
+							<p>&lt;ul&gt;, &lt;li&gt; Tag 목록 정렬 및 웹 페이지 구조 응용 활용</p>
+							<p>&lt;table&gt; Tag 활용하여 게시판 및 장바구니 페이지 제작</p>
+							<p>&lt;iframe&gt; 연결을 통해 외부 소스를 홈페이지 내로 임베드 <span class="annotation">&lt; &#33;-- 유투브, 스포티파이 등 -- &gt;</span></p>
+							<p>Web fonts 및 web icon 삽입</p>
+							<p>선택자를 이용하여 <span class="m-para-em">웹 접근성</span> 구현 <span class="annotation">&lt; &#33;-- skip navigation, blind 처리 등 -- &gt;</span></p>
+							<p>Semantic Tag 사용으로 코드 가독성 및 효율성 증가</p>
+							<p>&lt;img&gt;, &lt;map name=&ldquo; &rdquo;&gt;, &lt;area&gt; Tag 이용하여 이미지맵 제작</p>
+							<p>&lt;fieldset&gt;, &lt;legend&gt;, &lt;form&gt;, &lt;label&gt; 사용하여 <span class="m-para-em">Login, out 및 submit 폼 제작</span> 가능</p>
+						</div>
+						<div class="done">
+							닫기
+						</div>
+					
+					</div>
+
+					<!-- Figma Ability -->
+					<div class="doit">
+						
+						<div class="heading">
+							<img src="images/icon/pentool-icon.svg" alt="develog modal icon">
+							<p><span class="m-figma">Figma</span>의 이런 기능을 활용할 수 있어요</p>
+						</div>
+						<div class="para">
+							<p>Basic HTML Tag를 사용하여 <span class="m-para-em">Web, Mobile markup</span></p>
+							<p>HTML tag에 <span class="m-para-em">CSS &#47; JS mouse event 연계</span>하여 웹 및 모바일 페이지 동작 구현 </p>
+							<p>&lt;ul&gt;, &lt;li&gt; Tag 목록 정렬 및 웹 페이지 구조 응용 활용</p>
+							<p>&lt;table&gt; Tag 활용하여 게시판 및 장바구니 페이지 제작</p>
+							<p>&lt;iframe&gt; 연결을 통해 외부 소스를 홈페이지 내로 임베드 <span class="annotation">&lt; &#33;-- 유투브, 스포티파이 등 -- &gt;</span></p>
+							<p>Web fonts 및 web icon 삽입</p>
+							<p>선택자를 이용하여 <span class="m-para-em">웹 접근성</span> 구현 <span class="annotation">&lt; &#33;-- skip navigation, blind 처리 등 -- &gt;</span></p>
+							<p>Semantic Tag 사용으로 코드 가독성 및 효율성 증가</p>
+							<p>&lt;img&gt;, &lt;map name=&ldquo; &rdquo;&gt;, &lt;area&gt; Tag 이용하여 이미지맵 제작</p>
+							<p>&lt;fieldset&gt;, &lt;legend&gt;, &lt;form&gt;, &lt;label&gt; 사용하여 <span class="m-para-em">Login, out 및 submit 폼 제작</span> 가능</p>
+						</div>
+						<div class="done">
+							닫기
+						</div>
+					
+					</div>
+
+					<!-- Photoshop Ability -->
+					<div class="doit">
+						
+						<div class="heading">
+							<img src="images/icon/pentool-icon.svg" alt="develog modal icon">
+							<p><span class="m-psd">Photoshop</span>의 이런 기능을 활용할 수 있어요</p>
+						</div>
+						<div class="para">
+							<p>Basic HTML Tag를 사용하여 <span class="m-para-em">Web, Mobile markup</span></p>
+							<p>HTML tag에 <span class="m-para-em">CSS &#47; JS mouse event 연계</span>하여 웹 및 모바일 페이지 동작 구현 </p>
+							<p>&lt;ul&gt;, &lt;li&gt; Tag 목록 정렬 및 웹 페이지 구조 응용 활용</p>
+							<p>&lt;table&gt; Tag 활용하여 게시판 및 장바구니 페이지 제작</p>
+							<p>&lt;iframe&gt; 연결을 통해 외부 소스를 홈페이지 내로 임베드 <span class="annotation">&lt; &#33;-- 유투브, 스포티파이 등 -- &gt;</span></p>
+							<p>Web fonts 및 web icon 삽입</p>
+							<p>선택자를 이용하여 <span class="m-para-em">웹 접근성</span> 구현 <span class="annotation">&lt; &#33;-- skip navigation, blind 처리 등 -- &gt;</span></p>
+							<p>Semantic Tag 사용으로 코드 가독성 및 효율성 증가</p>
+							<p>&lt;img&gt;, &lt;map name=&ldquo; &rdquo;&gt;, &lt;area&gt; Tag 이용하여 이미지맵 제작</p>
+							<p>&lt;fieldset&gt;, &lt;legend&gt;, &lt;form&gt;, &lt;label&gt; 사용하여 <span class="m-para-em">Login, out 및 submit 폼 제작</span> 가능</p>
+						</div>
+						<div class="done">
+							닫기
+						</div>
+					
+					</div>
+
+					<!-- illustrator Ability -->
+					<div class="doit">
+						
+						<div class="heading">
+							<img src="images/icon/pentool-icon.svg" alt="develog modal icon">
+							<p><span class="css-id">illustrator</span>의 이런 기능을 활용할 수 있어요</p>
+						</div>
+						<div class="para">
+							<p>Basic HTML Tag를 사용하여 <span class="m-para-em">Web, Mobile markup</span></p>
+							<p>HTML tag에 <span class="m-para-em">CSS &#47; JS mouse event 연계</span>하여 웹 및 모바일 페이지 동작 구현 </p>
+							<p>&lt;ul&gt;, &lt;li&gt; Tag 목록 정렬 및 웹 페이지 구조 응용 활용</p>
+							<p>&lt;table&gt; Tag 활용하여 게시판 및 장바구니 페이지 제작</p>
+							<p>&lt;iframe&gt; 연결을 통해 외부 소스를 홈페이지 내로 임베드 <span class="annotation">&lt; &#33;-- 유투브, 스포티파이 등 -- &gt;</span></p>
+							<p>Web fonts 및 web icon 삽입</p>
+							<p>선택자를 이용하여 <span class="m-para-em">웹 접근성</span> 구현 <span class="annotation">&lt; &#33;-- skip navigation, blind 처리 등 -- &gt;</span></p>
+							<p>Semantic Tag 사용으로 코드 가독성 및 효율성 증가</p>
+							<p>&lt;img&gt;, &lt;map name=&ldquo; &rdquo;&gt;, &lt;area&gt; Tag 이용하여 이미지맵 제작</p>
+							<p>&lt;fieldset&gt;, &lt;legend&gt;, &lt;form&gt;, &lt;label&gt; 사용하여 <span class="m-para-em">Login, out 및 submit 폼 제작</span> 가능</p>
+						</div>
+						<div class="done">
+							닫기
+						</div>
+					
+					</div>
+
+				</div>
+
+			<h2>&#125;</h2>
+		</section>
+		
+		<!-- ability card modal -->
+		<script>
+			
+			const attCard = document.querySelectorAll('.a-card');
+			const attModal = document.querySelectorAll('.doit');
+			const mClose = document.querySelectorAll('.doit');
+			const mNums = [ 1, 2, 3, 4, 5, 6 ];
+			
+			attModal.forEach((e)=>{e.style.display='none'});
+
+			for(let n=0; n < mNums.length; n++){
+
+				attCard[n].addEventListener('click', ()=>{
+					attModal[n].style.display='block';
+					attModal[n].style.opacity='1';
+				})
+
+				mClose[n].addEventListener('click',()=>{
+					attModal[n].style.display='none';
+
+				})
+	
+			}
+		</script>
+
+	</div>
+
+</article>
+
+<div class="footer-postion">&nbsp;</div>
+
+<footer id="footer">
+	<div class="footer-inner">
+		<p>&copy;Seoyeon &middot; 2024</p>
+		<p>&nbsp;</p>
+		<p>Tab Size &#58; 4</p>
+		<p class="lang">HTML</p>
+		<p class="lang">HTML</p>
+		<p class="lang">CSS</p>
+		<p class="lang">JSON</p>
+	</div>
+</footer>
+
+<script src="js/main-tab.js"></script>
+
+</body>
+</html>
