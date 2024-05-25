@@ -188,18 +188,6 @@ h1 img{
 							animation: mainMotion 1.25s 6.5s backwards;;
  }
 
-
-
-/*@keyframes ex-motion{
-	0%{ opacity: 0; }
-	100%{ opacity: 1; }
-}
-
-@keyframes ex-motion2{
-	0%{ opacity: 0; }
-	100%{ opacity: 0.7; }
-}*/
-
 /* works */
 
 #works{ width: 97%; margin: 0 auto; padding-top: 110px; padding-bottom: 100px; min-width: 1000px; }
@@ -221,7 +209,6 @@ h2{ font: bold 40px 'IBM Plex Mono'; color: #fff;  }
 	padding-left: 70px; 
 }
 
-.works-ex .Typewriter__cursor{ display: none; }
 .card{ width: 90%; margin: 0 auto; 
 	display: flex; flex-wrap: wrap; 
 	justify-content: space-between;
