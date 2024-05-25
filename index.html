@@ -146,7 +146,18 @@
 				&ldquo;<span class='value'>works</span>&rdquo;
 				&gt;
 			</h2>
-			
+
+			<p class="works-ex">
+				&lt;<span class='att'>p</span>&gt;<br>
+				<span class="blank-space">
+					퍼블리싱 작업물입니다&#33;
+				</span>
+				<span class="blank-space">
+					HTML, CSS, JavaScript를 활용하여 제작했습니다
+				</span>
+				&lt;&#47;<span class='att'>p</span>&gt;
+			</p>
+
 			<div class="card">
 
 				<div class="works-card c01">
@@ -255,6 +266,29 @@
 			<h2>&lt;&#47;<span class="att">article</span>&gt;</h2>
 		</section>
 
+		<!-- 카드 animation -->
+		<script>
+			let observer = new IntersectionObserver((e)=>{
+				e.forEach((e)=>{
+					if(e.isIntersecting){
+						e.target.style.opacity= 1;
+					}else{
+						e.target.style.opacity= 0;
+					}
+				})
+			})
+
+			let card = document.querySelectorAll('.works-card')
+			let worksEx = document.querySelector('.works-ex')
+
+			observer.observe(worksEx)
+			for(i=0; i<6; i++){
+				observer.observe(card[i])
+			}
+
+
+		</script>
+
 		<!-- 카드 설명 올라오는 박스 script -->
 		<script>
 			const worksCard = document.querySelectorAll('.works-card');
@@ -285,6 +319,17 @@
 				<span class='value'>block</span>
 				&#125; <!-- } -->
 			</h2>
+
+			<p class="design-ex">
+				&#47;&#42;
+				<span class="blank-space">
+				개인 디자인 작업물입니다&#33;
+				</span>
+				<span class="blank-space">
+				Figma, Photoshop, illustrator 등의 디자인 툴을 이용했습니다
+				</span>
+				&#42;&#47;
+			</p>
 			
 			<div class="card">
 
@@ -403,7 +448,27 @@
 				</div>
 			</div>
 		</section>
+		<!-- 카드 animation -->
+		<script>
+			let observer2 = new IntersectionObserver((e)=>{
+				e.forEach((e)=>{
+					if(e.isIntersecting){
+						e.target.style.opacity= 1;
+					}else{
+						e.target.style.opacity= 0;
+					}
+				})
+			})
 
+			let d_card = document.querySelectorAll('.design-card')
+			let designEx = document.querySelector('.design-ex')
+			
+			observer2.observe(designEx)
+			for(i=0; i<6; i++){
+				observer2.observe(d_card[i])
+			}
+
+		</script>
 		<!-- design card explain -->
 		<script>
 			
@@ -447,7 +512,14 @@
 							<p><span class="value">Birth</span> &nbsp;&#58;&nbsp; 1999. 08. 05 <span class="json-mark-s">, </span></p>
 							<p><span class="value">Address</span> &nbsp;&#58;&nbsp; 서울 강북구 <span class="json-mark-s">, </span></p>
 							<p><span class="value">License</span> &nbsp;&#58;&nbsp; 웹디자인기능사, GTQ / GTQi 1급 <span class="json-mark-s">, </span></p>
-							<p><span class="value">Portfolio</span> &nbsp;&#58;&nbsp; woogwayeon.dothome.co.kr <span class="json-mark-s">, </span></p>
+							<p>
+								<span class="value">Portfolio</span> &nbsp;&#58;&nbsp; 
+								<a href="https://woogwayeon.github.io/sublime_portfolio/" class="link-underline">woogwayeon.github.io/sublime_portfolio</a><span class="json-mark-s"> , </span>
+							</p>
+							<p>
+								<span class="value">PDF</span> &nbsp;&#58;&nbsp; 
+								<a href="http://naver.me/xHD3fwtf" class="link-underline" target="_blank">포트폴리오.pdf</a> 
+							</p>
 							<h3><span class="json-mark">&#125;</span></h3>
 							<h3><span class="json-mark">&#93;</span></h3>
 						</div>
@@ -691,6 +763,29 @@
 			<h2>&#125;</h2>
 		</section>
 		
+		<script>
+			let observer3 = new IntersectionObserver((e)=>{
+				e.forEach((e)=>{
+					if(e.isIntersecting){
+						e.target.style.opacity= 1;
+					}else{
+						e.target.style.opacity= 0;
+					}
+				})
+			})
+
+			let p_about = document.querySelector('.about')
+			let p_ability = document.querySelector('.ability')
+			let p_character = document.querySelector('.character')
+
+			
+			observer3.observe(p_about);
+			observer3.observe(p_ability);
+			observer3.observe(p_character);
+
+
+		</script>
+
 		<!-- ability card modal -->
 		<script>
 			
