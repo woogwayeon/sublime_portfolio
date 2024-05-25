@@ -1,0 +1,78 @@
+/* PC (해상도 1024px)*/
+@media all and (min-width:1224px) {
+  
+  .a-card { width: 32%; }
+  
+}
+
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
+@media all and (min-width:480px) and (max-width:1223px) {
+
+.sidebar{ 
+    position: fixed;
+    left: -250px;
+}
+  .tab-hd{ padding-left: 2px; }
+  .tab-hd li:nth-child(1){ display: none; }
+  .con-area{ padding: 60px; margin: 0 auto; }
+
+  .visual-inner{ padding-top: 80px; padding-bottom: 220px; }
+
+  .visual-inner p{ padding-bottom: 10px; }
+  .visual-inner>p:nth-child(1){ font-size: 60px }
+  .visual-inner>p:nth-child(2){ font-size: 60px }
+  .visual-inner>p:nth-child(3){ font-size: 90px }
+  .visual-inner>p:nth-child(4){ font-size: 60px }
+  .visual-inner>p:nth-child(5){ font-size: 60px }
+
+  .about .image img{ width: 90%; }
+  .a-card { width: 49%; }
+  .a-heading p{ font: 800 32px 'Lato'; }
+
+  .ability-para{ padding-bottom: 80px; display: block; }
+  .ability-para p{ margin-top: 10px; display: block; }
+  .ability-card-wrap{ margin-top: 30px; }
+  .doit{
+    top: 15%; left: 12%;
+    width: 900px;
+  }
+}
+
+
+/*@media all and (max-width:479px) {
+ 
+
+  .top-hd{ 
+  background: #534c4c;
+  width: 100%; height:34px; 
+  position: fixed; 
+  z-index: 10000; 
+  }
+
+
+  .tab-hd{ 
+  background: #222;
+  display: flex;
+  width: 100%;
+  height: 74px; 
+  z-index: 9999;
+  overflow-x: auto;
+  }
+
+  .visual-inner p{ padding-bottom: 10px; }
+  .visual-inner>p:nth-child(1){ font-size: 30px }
+  .visual-inner>p:nth-child(2){ font-size: 30px }
+  .visual-inner>p:nth-child(3){ font-size: 35px }
+  .visual-inner>p:nth-child(4){ font-size: 30px }
+  .visual-inner>p:nth-child(5){ font-size: 30px }
+
+}*/
+
+
+
+
+
+
+
+
+
