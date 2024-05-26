@@ -217,7 +217,7 @@
 }
 .about{ display: block; margin: 0 auto;   }
 
-.about .image{ width: 90%; margin: 0 auto; }
+.about .image{ width: 90%; margin: 0 auto;  }
 .about .image img{ width: 60%; text-align: center; }
 .about .info{ width: 100%; padding-top: 40px; }
 
@@ -230,6 +230,10 @@
     }
 
   .about .info .value{ font-size: 16px; }
+.info h3:nth-child(2),.info h3:nth-child(11){ 
+    padding-left: 10px; 
+}
+
   .a-card { width: 100%; }
   .a-heading p{ font: 800 16px 'Lato'; }
 
