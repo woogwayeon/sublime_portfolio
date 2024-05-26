@@ -77,7 +77,7 @@ h1 img{
 	z-index: 9999;
 }
 .tab-hd li{ width:260px;}
-.tab-hd li:nth-child(1){ width: 250px; min-width: 250px; }
+.tab-hd li:nth-child(1){ width: 250px; }
 .tab-hd a{ display: block;
 			position: relative;
 			top: 38px;
@@ -124,7 +124,6 @@ h1 img{
 /* Sidebar */
 .sidebar{ 
 	width: 250px; 
-	min-width: 250px; 
 	height: 100vh;
 	background: rgba(34, 34, 34, 0.6); 
 	align-items: center;
@@ -157,9 +156,13 @@ h1 img{
 
 /* visual */
 
-#visual{ width: 97%; margin: 0 auto; min-width: 1300px; }
+#visual{ width: 97%; margin: 0 auto; }
 
-.visual-inner{ padding-top: 80px; padding-bottom: 220px; }
+.visual-inner{ 
+	padding-top: 130px; 
+	padding-bottom: 120px;
+	padding-left: 20px; 
+}
 
 @keyframes mainMotion{ 
 	0%{ opacity: 0; }
@@ -167,26 +170,29 @@ h1 img{
 }
 
 .visual-inner p{ padding-bottom: 10px; }
-.visual-inner>p:nth-child(1){ font: bold 80px 'IBM Plex Mono'; color: #fff;
+.visual-inner>p:nth-child(1){ font: bold 60px 'IBM Plex Mono'; color: #fff;
 							animation: mainMotion 1.25s 0.1s backwards;							
 }
-.visual-inner>p:nth-child(2){ font: bold 80px 'IBM Plex Mono'; color: #fff; 
+.visual-inner>p:nth-child(2){ font: bold 60px 'IBM Plex Mono'; color: #fff; 
 							padding-left: 100px;
 
 							animation: mainMotion 1.25s 0.8s backwards;
 }
-.visual-inner>p:nth-child(3){ font: bold 110px 'IBM Plex Mono'; color: #fff; 
+.visual-inner>p:nth-child(3){ font: bold 80px 'IBM Plex Mono'; color: #fff; 
 							padding-left: 170px; /*text-align: center;*/
 							animation: mainMotion 1.25s 2.1s backwards;
 }
-.visual-inner>p:nth-child(4){ font: bold 80px 'IBM Plex Mono'; color: #fff; 
+.visual-inner>p:nth-child(4){ font: bold 60px 'IBM Plex Mono'; color: #fff; 
 							padding-left: 100px;
 
 							animation: mainMotion 1.25s 5.9s backwards;
 }
-.visual-inner>p:nth-child(5){ font: bold 80px 'IBM Plex Mono'; color: #fff;
+.visual-inner>p:nth-child(5){ font: bold 60px 'IBM Plex Mono'; color: #fff;
 							animation: mainMotion 1.25s 6.5s backwards;;
  }
+
+
+
 
 /* works */
 
@@ -209,6 +215,7 @@ h2{ font: bold 40px 'IBM Plex Mono'; color: #fff;  }
 	padding-left: 70px; 
 }
 
+.works-ex .Typewriter__cursor{ display: none; }
 .card{ width: 90%; margin: 0 auto; 
 	display: flex; flex-wrap: wrap; 
 	justify-content: space-between;
@@ -354,9 +361,14 @@ h2{ font: bold 40px 'IBM Plex Mono'; color: #fff;  }
 
 /* Profile */
 
-#profile{ width: 97%; margin: 0 auto; padding-top: 110px; padding-bottom: 100px; min-width: 1000px; }
+#profile{ 
+	width: 97%; 
+	margin: 0 auto; 
+	padding-top: 110px; 
+	padding-bottom: 100px; 
+}
 
-.profile-inner{ width: 90%; margin: 0 auto; }
+.profile-inner{ width: 90%; margin: 0 auto; padding-left: 30px; }
 
 .about{ 
 		display: flex; 
@@ -366,11 +378,16 @@ h2{ font: bold 40px 'IBM Plex Mono'; color: #fff;  }
 		opacity: 0;
 		transition: 0.7s;
 }
-.about .image{ width: 40%; text-align: center;
-				overflow: hidden; }
+.about .image{ width: 40%; margin: 0 auto; text-align: center; }
 .about .info{ width: 60%; }
 .about h3{ font: bold 40px 'IBM Plex Mono'; color: #fff; }
-.about .info p{ font: 600 22px 'Lato', 'Noto Sans KR'; color: #fff; padding-bottom: 20px; padding-left: 130px; }
+.about h3 .json-mark{ padding-bottom: 10px; }
+.about .info p{ 
+	font: 600 22px 'Lato', 'Noto Sans KR';
+	color: #fff;
+	padding-bottom: 20px;
+	padding-left: 130px; 
+}
 .about .info .value{ font: bold 24px 'Lato'; }
 
 
@@ -385,7 +402,7 @@ h2{ font: bold 40px 'IBM Plex Mono'; color: #fff;  }
 	display: flex; 
 	align-items: center; 
 	justify-content: center;
-	padding-bottom: 40px;
+	margin-bottom: 40px;
 	height: 0px;
 }
 .ability h3{ font: bold 40px 'IBM Plex Mono'; color: #fff; }
@@ -420,11 +437,11 @@ h2{ font: bold 40px 'IBM Plex Mono'; color: #fff;  }
 .a-img{ padding-right: 23px; }
 .a-img img{ width: 50px; }
 .a-img .figma-icon{ width: 35px; }
-.a-heading p{ font: 800 34px 'Lato'; }
+.a-heading p{ font: 800 35px 'Lato'; }
 
 
 .character{ 
-	width: 89%; 
+	width: 100%; 
 	margin: 0 auto; 
 	padding-top: 110px; 
 	padding-bottom: 100px;
@@ -432,19 +449,27 @@ h2{ font: bold 40px 'IBM Plex Mono'; color: #fff;  }
 	transition: 1.5s;
 }
 .character h3{ font: bold 40px 'IBM Plex Mono'; color: #fff; }
-.character p{ font: 600 24px 'Lato', 'Noto Sans KR'; color: #fff;
-				padding-left: 150px; padding-top: 20px; }
+.character p{
+	font: 400 24px 'Lato', 'Noto Sans KR';
+	color: rgba(255, 255, 255, 0.6);
+	letter-spacing: 4%;
+	line-height: 220%;
+	padding-left: 130px; 
+	padding-top: 20px; 
+}
 
-
-
-
-
+.c-em{ color: #fff; font-weight: 600;}
+.red{ color: #FF3200; }
+.orange{ color: orange; }
+.yellow{ color: #F7DF1E; }
+.pink{ color: #FF48B6; }
+.blue{ color: #33a9ff; }
+.green{ color: #62ff48; }
 
 /* Footer */
 #footer{ 
-	position: fixed; bottom: 0; z-index: 10000; width: 100%;
+	position: fixed; bottom: 0; z-index: 10000; width: 100vw;
 	background-color: #222;		
-	min-width: 1000px;
 }
 
 .footer-inner{ 
