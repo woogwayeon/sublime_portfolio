@@ -69,12 +69,13 @@ h1 img{
 
 .tab-hd{ 
 	background: #222;
-	display: flex;
 	width: 100%;
-	min-width: 1000px; 
 	height: 74px; 
 	position: fixed;
 	z-index: 9999;
+}
+.tab-hd > ul { 
+	display: flex;
 }
 .tab-hd li{ width:260px;}
 .tab-hd li:nth-child(1){ width: 250px; }
@@ -196,7 +197,7 @@ h1 img{
 
 /* works */
 
-#works{ width: 97%; margin: 0 auto; padding-top: 110px; padding-bottom: 100px; min-width: 1000px; }
+#works{ width: 97%; margin: 0 auto; padding-top: 110px; padding-bottom: 100px; }
 
 
 h2{ font: bold 40px 'IBM Plex Mono'; color: #fff;  }
@@ -215,7 +216,7 @@ h2{ font: bold 40px 'IBM Plex Mono'; color: #fff;  }
 	padding-left: 70px; 
 }
 
-.works-ex .Typewriter__cursor{ display: none; }
+/*.works-ex .Typewriter__cursor{ display: none; }*/
 .card{ width: 90%; margin: 0 auto; 
 	display: flex; flex-wrap: wrap; 
 	justify-content: space-between;
@@ -257,20 +258,22 @@ h2{ font: bold 40px 'IBM Plex Mono'; color: #fff;  }
 .explain-hd{ font: 300 24px 'Lato'; color: #333; text-align: center; padding-bottom: 5px; }
 .explain-para{ font: 700 16px 'Lato'; color: #333; text-align: center; }
 
-.c01 .con-card-logo{ position: absolute; top: calc(50% - (124px/2)); left: calc(50% - 100px); }
+.con-card-logo{ position: absolute; }
+
+.c01 .con-card-logo{ top: calc(50% - (124px/2)); left: calc(50% - 100px); }
 .c01 .con-card-logo img{ width: 220px; }
 
 
-.c02 .con-card-logo{ position: absolute; top: calc(50% - (94px/2)); left: calc(50% - 150px); }
+.c02 .con-card-logo{ top: calc(50% - (94px/2)); left: calc(50% - 150px); }
 .c02 .con-card-logo img{ width: 300px; }
 
-.c03 .con-card-logo{ position: absolute; top: calc(50% - (166px/2)); left: calc(50% - 150px); }
+.c03 .con-card-logo{ top: calc(50% - (166px/2)); left: calc(50% - 150px); }
 .c03 .con-card-logo img{ width: 300px; }
 
-.c04 .con-card-logo{ position: absolute; top: calc(50% - (65px/2)); left: calc(50% - 150px); }
+.c04 .con-card-logo{ top: calc(50% - (65px/2)); left: calc(50% - 150px); }
 .c04 .con-card-logo img{ width: 300px; }
 
-.c05 .con-card-logo{ position: absolute; top: calc(50% - 24px); left: calc(50% - 145px); }
+.c05 .con-card-logo{ top: calc(50% - 24px); left: calc(50% - 145px); }
 .c05 .con-card-logo p{ font: 600 40px 'Lato'; color: #fff; }
 
 .continue { 
@@ -296,7 +299,6 @@ h2{ font: bold 40px 'IBM Plex Mono'; color: #fff;  }
 	margin: 0 auto; 
 	padding-top: 110px; 
 	padding-bottom: 100px; 
-	min-width: 1000px; 
 }
 
 .design-ex{
@@ -338,23 +340,24 @@ h2{ font: bold 40px 'IBM Plex Mono'; color: #fff;  }
 	transition: 0.8s;
 }
 
-.d01 .con-card-logo{ position: absolute; top: calc(50% - (104px/2)); left: calc(50% - 150px); }
+
+.d01 .con-card-logo{ top: calc(50% - (104px/2)); left: calc(50% - 150px); }
 .d01 .con-card-logo img{ width: 300px; }
 
 
-.d02 .con-card-logo{ position: absolute; top: calc(50% - (76px/2)); left: calc(50% - 150px); }
+.d02 .con-card-logo{ top: calc(50% - (76px/2)); left: calc(50% - 150px); }
 .d02 .con-card-logo img{ width: 300px; }
 
-.d03 .con-card-logo{ position: absolute; top: calc(50% - (138px/2)); left: calc(50% - 150px); }
+.d03 .con-card-logo{ top: calc(50% - (138px/2)); left: calc(50% - 150px); }
 .d03 .con-card-logo img{ width: 300px; }
 
-.d04 .con-card-logo{ position: absolute; top: calc(50% - (135px/2)); left: calc(50% - (250px/2)); }
+.d04 .con-card-logo{ top: calc(50% - (135px/2)); left: calc(50% - (250px/2)); }
 .d04 .con-card-logo img{ width: 250px; }
 
-.d05 .con-card-logo{ position: absolute; top: calc(50% - (39px/2)); left: calc(50% - 135px); }
+.d05 .con-card-logo{ top: calc(50% - (39px/2)); left: calc(50% - 135px); }
 .d05 .con-card-logo img{ width: 270px; }
 
-.d06 .con-card-logo{ position: absolute; top: calc(50% - 24px); left: calc(50% - (245px/2)); }
+.d06 .con-card-logo{ top: calc(50% - 24px); left: calc(50% - (245px/2)); }
 .d06 .con-card-logo p{ font: 600 40px 'Lato'; color: #fff; }
 
 
