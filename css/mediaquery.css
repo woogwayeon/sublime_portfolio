@@ -1,14 +1,25 @@
 
-@media all and (max-width:1450px) {
+/* 노트북 사이즈 */
+@media all and (max-width:1450px) and (min-width:1024px) {
+
+  /* Tab header & sidebar */
 
   .tab-hd li{ width:220px;}
 
   .tab-hd li:nth-child(1){ width: 220px; }
   .sidebar{ width: 220px; }
 
-  .visual-inner{ padding-top: 160px; padding-bottom: 220px; padding-left: 40px; }
+
+  /* visual */
+
+  .visual-inner{ 
+    padding-top: 160px; 
+    padding-bottom: 220px; 
+    padding-left: 40px; 
+  }
 
   .visual-inner p{ padding-bottom: 10px; }
+  
   .visual-inner>p:nth-child(1){ 
                 font-size: 55px; 
                 padding-left: 2px;
@@ -31,24 +42,68 @@
   }
 
 
+  /* works, design */
 
-/* profile */
+  #works .con-card-logo img{ width: 150px; }
+  #works .con-card-logo{ 
+    left:calc(50% - (150px/2)); 
+  }
 
-  .ability-para{ padding-bottom: 80px; display: block; }
+  .c01 .con-card-logo{ top: calc(50% - (85px/2)) }
+  .c02 .con-card-logo{ top: calc(50% - (47px/2)) }
+  .c03 .con-card-logo{ top: calc(50% - (84px/2)) }
+  .c04 .con-card-logo{ top: calc(50% - (33px/2)) }
+  .c05 .con-card-logo{ 
+    top: calc(50% - (31px/2)); 
+    left: calc(40% - (179px/2)); 
+  }
+  
+  #design .con-card-logo img{ width: 150px; }
+  #design .con-card-logo{ 
+    left:calc(50% - (150px/2)); 
+  }
+
+  .d01 .con-card-logo{ top: calc(50% - (52px/2)) }
+  .d02 .con-card-logo{ top: calc(50% - (38px/2)) }
+  .d03 .con-card-logo{ top: calc(50% - (69px/2)) }
+  .d04 .con-card-logo{ top: calc(50% - (84px/2)) }
+  .d05 .con-card-logo{ top: calc(50% - (22px/2)) }
+  .continue{ top: calc(50% - (00px/2)) }
+  
+
+  .c05 .con-card-logo p{ 
+    font-size: 26px; 
+    text-align: center;
+  }
+  .d06 .con-card-logo p{ 
+    font-size: 26px;
+   }
+
+
+  /* profile */
+
+  .ability-para{ 
+    padding-bottom: 80px; 
+    display: block; 
+  }
   .ability-para p{ 
     margin-top: 10px; 
     display: block; 
     text-align: center;
-/*    border: 1px solid #000; */
   }
+
   .about{ display: block; }
 
   .about .image{ width: 90%; }
-  .about .info{ width: 80%; padding-top: 40px; }
+  .about .info{ 
+    width: 80%; 
+    padding-top: 30px; 
+  }
+
 
   .a-card { width: 48%; }
 
-    .character p{
+  .character p{
     font: 400 24px 'Lato', 'Noto Sans KR';
     color: rgba(255, 255, 255, 0.6);
     letter-spacing: 4%;
@@ -57,24 +112,46 @@
     padding-top: 20px; 
   }
 
+  /* 할 수 있어요 모달창 */
+  .doit{
+    width: 900px;
+  }
+
 }
 
-/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
+
+
+
+
+
+/* 태블릿 사이즈 */
 @media all and (max-width:1023px) and (min-width: 768px) {
 
-.con-area{ width: 100vw; padding: 0; }
-.sidebar{ 
+
+/* Tab header & sidebar */ 
+  .sidebar{ 
     position: fixed;
     left: -250px;
-}
+  }
   .tab-hd{ padding-left: 2px; }
   .tab-hd li:nth-child(1){ display: none; }
   .tab-hd li{ width:200px;}
-  .con-area{ padding: 10px; margin: 0 auto; }
+  
+/* (ALL) Content area */
+  .con-area{ 
+    padding: 10px; 
+    width: 100vw; 
+    margin: 0 auto;
+  }
 
-  .visual-inner{ padding-top: 160px; padding-bottom: 220px; padding-left: 40px; }
-
+/* visual */
+  .visual-inner{
+    padding-top: 160px; 
+    padding-bottom: 220px; 
+    padding-left: 40px; 
+  }
   .visual-inner p{ padding-bottom: 10px; }
+  
   .visual-inner>p:nth-child(1){ 
                 font-size: 45px; 
                 padding-left: 2px;
@@ -97,177 +174,410 @@
   }
 
 
+/* Works & Design */
+
+#works{
+  padding-top: 90px;
+}
+
+h2{ font-size: 32px; }
+
+#works .works-ex{
+  font-size: 21px;
+  padding-left: 50px;
+} 
+.design-ex{
+  font-size: 21px;
+  padding-left: 50px;
+}
+
+.card{ padding-left: 15px; }
+
+  .works-card{ width: 98%; }
+  .continue{ display: none; }
+  .design-card{ width: 98%; }
+
+  #works .works-ex .blank-space, #design .design-ex .blank-space{ 
+    display: block;
+    padding-left: 30px; 
+  }
+
+
+
+ 
+
 /*profile*/
+  .profile-inner{ 
+    width: 97%;
+    padding-left: 25px; 
+  }
 
-  .profile-inner{ padding-left: 25px; }
-  
+/* about : 미모티콘 프로필 + 자기소개 */
+
   .about{ display: block; }
+  .about h3{ font-size: 30px; }
+  
   .about .image{
-      width: 90%; 
-      margin: 0 auto; 
-    }
-  .about .info{ width: 100%; padding-top: 40px; }
-
-  .about h3{ font: bold 30px 'IBM Plex Mono'; color: #fff; }
+    width: 90%; 
+    margin: 0 auto; 
+  }
+  
+  .about .info{
+    width: 100%; 
+    padding-top: 40px; 
+  }
   .about .info p{ 
-      font: 600 20px 'Lato', 'Noto Sans KR';
-      color: #fff;
+      font-size: 20px;
       padding-bottom: 20px;
       padding-left: 130px; 
     }
 
 
+/* ability : 다룰 수 있는 기술 */
+
+  .ability h3{ font-size: 30px; }
+  .ability p{ font-size: 20px; }
+
+  .ability-para{
+    padding-bottom: 60px;
+    display: block; 
+  }
+  .ability-para p{
+    margin-top: 10px;
+    display: block; 
+  }
+
+  /* 능력치 카드 */
+  .ability-card-wrap{
+    margin-top: 30px;
+    margin: 0 auto;
+  }
   .a-card { width: 49%; }
-  .a-heading p{ font: 800 32px 'Lato'; }
+  .a-heading p{ font-size: 32px; }
 
-  .ability h3{ font: bold 30px 'IBM Plex Mono'; color: #fff; }
-  .ability p{ font: 600 20px 'Lato', 'Noto Sans KR'; color: #fff; }
-  .a-heading p{ font: 800 30px 'Lato'; }
 
-  .character h3{ font: bold 30px 'IBM Plex Mono'; color: #fff; }
 
+/* character : 성격 */
   .character{ width: 100%; }
-  .material-symbols-rounded{ font-size: 25px; font-weight: 600; }
+  .character h3{ font-size: 30px; }
+
+  .material-symbols-rounded{
+    /* 구글아이콘 */
+    font-size: 25px; 
+    font-weight: 600; 
+  }
+
   .character p{
-    font: 400 18px 'Lato', 'Noto Sans KR';
-    color: rgba(255, 255, 255, 0.6);
+    font-size: 18px;
     letter-spacing: 4%;
     line-height: 220%;
     padding-left: 60px; 
     padding-top: 20px; 
   }
 
-  .profile-inner{ width: 97%; }
-  .ability-para{ padding-bottom: 80px; display: block; }
-  .ability-para p{ margin-top: 10px; display: block; }
-  .ability-card-wrap{ margin-top: 30px; margin: 0 auto; }
+  
+
+/* 이런 일을 할 수 있어요! modal (modal.css 분리) */
   .doit{
-    top: 15%; left: 12%;
-    width: 900px;
+    width: 750px;
+    height: 400px;
+    padding-bottom: 13px;
+    top: calc( 50% - 200px );
+    left: calc( 50% - (750px/2));
   }
 
+  .doit .heading{
+    height: 60px;
+  }
 
+  .doit .heading img{
+    width: 26px;
+    padding-top: 10px;
+  }
+
+  .doit .heading p{ font-size: 22px; }
+
+
+  .doit .para{
+    height: 60%;
+  }
+
+  .doit .para p{ 
+    font-size: 16px;
+    padding-bottom: 18px;
+  }
+  .done{
+  width: 135px; height: 44px;
+  border-radius: 5px;
+  font-size: 20px;
+  line-height: 44px;
+  }
 
 }
 
 
 @media all and (max-width:767px) {
 
-.position-area{ height: 68px; width: 100%; }
-.footer-postion{ height: 32px; width: 100%; }
-.con-area{ width: 100vw; padding: 0; }
-.sidebar{ 
+/* 해더, 푸터 빈공간 box */
+  .position-area{ height: 68px; width: 100%; }
+  .footer-postion{ height: 32px; width: 100%; }
+
+
+/* Tab heading + sidebar */
+  
+  .sidebar{ 
     position: fixed;
     left: -250px;
-} 
-  .top-hd{ height: 32px; }
-  .top-hd p{ font-size: 12px; }
-  .hd-point-size{ font-size: 10px; }
+  } 
+  
+  .top-hd{ height: 32px; } /* 모바일 헤더 높이값 줄임 */
+  .top-hd p{ font-size: 12px; } /* 모바일 헤더 글씨 줄임 */
+  .hd-point-size{ font-size: 10px; } /* 서브라임 로고 최상단 (fortfolio 대문자 사이즈 조절) */
 
-  .tab-hd{ padding-left: 2px; height: 68px; }
-  .tab-hd a{ font-size: 12px; height: 32px; top: 36px  }
-  .tab-hd li:nth-child(1){ display: none; }
-  .tab-hd li{ width: 100px;}
+  
+  .tab-hd{
+    width:100%;
+    padding-left: 2px; 
+    height: 68px; 
+    overflow:auto;
+    overflow-y: hidden;
+  }
 
-/*  .tab-hd li>a img:nth-child(2){ display: none; }*/
-  .tab-hd li>a img:nth-child(2){ width: 5px; }
+  .tab-hd ul { width:400px; }
 
-  .con-area{ padding: 20px; margin: 0 auto; }
+  .tab-hd a{
+    font-size: 12px; 
+    height: 32px; 
+    top: 37px;  
+  }
 
+  .tab-hd li:nth-child(1){ display: none; } /* 사이드바 제거 */
+  .tab-hd li{ width: 100px; }
+
+  .tab-hd li>a img:nth-child(2){ width: 5px; } /* 상단 탭메뉴 토글아이콘 */
+
+
+
+/* 본문 영역 시작 (all) */
+  .con-area{ 
+  width: 100vw;
+  padding: 0;
+  padding: 20px; 
+  margin: 0 auto; 
+  }
+
+/* visual */
   #visual{ width: 100%; margin: 0 auto; }
 
-.visual-inner{ 
-  padding-top: 140px; 
-  padding-bottom: 120px;
-  padding-left: 0;
-}
+  .visual-inner{ 
+    padding-top: 140px; 
+    padding-bottom: 120px;
+    padding-left: 0;
+  }
 
   .visual-inner p{ padding-bottom: 10px; }
   .visual-inner>p:nth-child(1){ 
-                  font-size: 25px;
-                  padding-left: 0px;
+              font-size: 25px;
+              padding-left: 0px;
 
   }
   .visual-inner>p:nth-child(2){ 
-                  font-size: 25px;
-                  padding-left: 20px;
+              font-size: 25px;
+              padding-left: 20px;
 
   }
   .visual-inner>p:nth-child(3){ 
-                  font-size: 28px;
-                  padding-left: 42px;
+              font-size: 28px;
+              padding-left: 42px;
 
   }
   .visual-inner>p:nth-child(4){ 
-                  font-size: 25px;
-                  padding-left: 20px;
+              font-size: 25px;
+              padding-left: 20px;
 
   }
   .visual-inner>p:nth-child(5){ 
-                  font-size: 25px;
-                  padding-left: 0px;
+              font-size: 25px;
+              padding-left: 0px;
 
   }
 
-/* profile */
+ /* Works & Design */
 
-.profile-inner{ 
-  width: 90%; margin: 0 auto;
-  padding-left: 20px; 
-}
-.about{ display: block; margin: 0 auto;   }
+  #works{
+    padding-top: 88px;
+  }  
+  #design{
+    padding-top: 88px;
+  }
 
-.about .image{ width: 90%; margin: 0 auto;  }
-.about .image img{ width: 60%; text-align: center; }
-.about .info{ width: 100%; padding-top: 40px; }
+  h2{ font-size: 23px; }
 
-  .about h3{ font: bold 24px 'IBM Plex Mono'; color: #fff; }
-  .about .info>p{ 
-      font: 600 16px 'Lato', 'Noto Sans KR';
-      color: #fff;
-      padding-bottom: 10px;
-      padding-left: 10px; 
-    }
+  #works .works-ex{
+    font-size: 18px;
+    padding-left: 20px;
+  } 
+  .design-ex{
+    font-size: 18px;
+    padding-left: 20px;
+  }
 
-  .about .info .value{ font-size: 16px; }
-.info h3:nth-child(2),.info h3:nth-child(11){ 
-    padding-left: 10px; 
-}
+  .card{ padding-left: 15px; }
 
-  .a-card { width: 100%; }
-  .a-heading p{ font: 800 16px 'Lato'; }
+  .works-card{ width: 98%; }
+  .continue{ display: none; }
+  .design-card{ width: 98%; }
 
-  .ability h3{ font: bold 24px 'IBM Plex Mono'; color: #fff; }
+  #works .con-card-logo img{ width: 150px; }
+  #works .con-card-logo{ 
+    left:calc(50% - (150px/2)); 
+  }
 
-  .ability p{ font: 600 16px 'Lato', 'Noto Sans KR'; color: #fff; }
+  .c01 .con-card-logo{ top: calc(50% - (85px/2)) }
+  .c02 .con-card-logo{ top: calc(50% - (47px/2)) }
+  .c03 .con-card-logo{ top: calc(50% - (84px/2)) }
+  .c04 .con-card-logo{ top: calc(50% - (33px/2)) }
+  .c05 .con-card-logo{ 
+    top: calc(50% - (31px/2)); 
+    left: calc(40% - (179px/2)); 
+  }
+  
+  #design .con-card-logo img{ width: 150px; }
+  #design .con-card-logo{ 
+    left:calc(50% - (150px/2)); 
+  }
 
-  .a-img img{ width: 34px; }
-  .a-heading p{ font: 800 32px 'Lato'; }
+  .d01 .con-card-logo{ top: calc(50% - (52px/2)) }
+  .d02 .con-card-logo{ top: calc(50% - (38px/2)) }
+  .d03 .con-card-logo{ top: calc(50% - (69px/2)) }
+  .d04 .con-card-logo{ top: calc(50% - (84px/2)) }
+  .d05 .con-card-logo{ top: calc(50% - (22px/2)) }
+  .continue{ top: calc(50% - (00px/2)) }
+  
 
-  .character{ width: 100%; }
-  .character h3{ font: bold 24px 'IBM Plex Mono'; color: #fff; }
-  .character p{
-    font: 400 16px 'Lato', 'Noto Sans KR';
-    color: rgba(255, 255, 255, 0.6);
-    letter-spacing: 4%;
-    line-height: 220%;
+  .c05 .con-card-logo p{ 
+    font-size: 26px; 
+    text-align: center;
+  }
+  .d06 .con-card-logo p{ 
+    font-size: 26px;
+   }
+
+  .card-mouse-over{ height: 70px; }
+  .explain-hd{ font-size: 18px; padding-bottom: 5px; }
+  .explain-para{ font-size: 14px; text-align: center; }
+
+
+  #works .works-ex .blank-space, #design .design-ex .blank-space{ 
+    display: block;
+    padding-left: 30px; 
+  }
+
+
+
+
+
+
+ /* profile */
+
+  .profile-inner{ 
+    width: 97%; 
+    margin: 0 auto;
     padding-left: 20px; 
-    padding-top: 20px; 
   }
 
-  .material-symbols-rounded{ font-size: 18px; font-weight: 600; }
+  /* about : 미모티콘 프로필 + 자기소개 */
+  .about{ display: block; }
 
-  .profile-inner{ width: 97%; }
+  .about .image{ width: 90%; }
+  .about .image img{ width: 60%; }
+
+  .about .info{ 
+    width: 100%; 
+    padding-top: 40px; 
+  }
+  .about h3{ font-size: 24px; }
+  .about .info .value{ font-size: 16px; }
+  .about .info>p{ 
+    font-size: 16px;
+    padding-bottom: 10px;
+    padding-left: 10px; 
+  }
+
+  /* {  } 들여쓰기 패딩 */
+  .info h3:nth-child(2),.info h3:nth-child(11){ 
+    padding-left: 10px; 
+  }
+
+
+ /* ability : 다룰 수 있는 기술 */
+  
+  .ability h3{ font-size: 24px; }
+  .ability p{ font-size: 16px; }
+
   .ability-para{ padding-bottom: 80px; display: block; }
   .ability-para p{ margin-top: 10px; display: block; }
   .ability-card-wrap{ margin-top: 30px; margin: 0 auto; }
+
+  .a-card { width: 100%; }
+  .a-img img{ width: 34px; }
+  .a-heading p{ font: 800 32px 'Lato'; }
+
+
+ /* character : 성격 */
+  .character{ width: 100%; }
+  .character h3{ font-size: 24px; }
+  .character p{
+    font-size: 16px;
+    letter-spacing: 4%;
+    padding-left: 10px; 
+    padding-top: 10px; 
+  }
+
+  .material-symbols-rounded{ 
+    /* 구글아이콘 사이즈조정 */
+    font-size: 18px; 
+    font-weight: 600; 
+  }
+
+  
+  /* 이런 일을 할 수 있어요! modal (modal.css 분리) */
   .doit{
-    top: 15%; left: 12%;
-    width: 900px;
+    width: 330px;
+    height: 610px;
+    padding-bottom: 24px;
+    top: calc( 50% - 300px );
+    left: calc( 50% - (330px/2));
+  }
+
+  .doit .heading{
+    height: 80px;
+  }
+
+  .doit .heading img{ width: 24px; padding-top: 12px; }
+
+  .doit .heading p{ font-size: 16px; text-align: left; }
+
+
+  .doit .para{
+    height: 72%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .doit .para p{ 
+    font-size: 14px;
+    padding-bottom: 18px;
+  }
+  .done{
+  width: 135px; height: 44px;
+  border-radius: 5px;
+  font-size: 20px;
+  line-height: 44px;
   }
 
 
- /*Footer*/
+  /*Footer*/
   .footer-inner{ height: 32px; line-height: 32px; }
   .footer-inner p{ font-size: 12px;  }
   .footer-inner p:nth-child(2) { width: 20%; }
