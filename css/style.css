@@ -44,6 +44,8 @@ body::-webkit-scrollbar {
 
 
 /* header */
+
+/* top-hd : 서브라임 로고 및 최상단 */
 .top-hd{ 
 	background: #534c4c;
 	width: 100%; height:34px; 
@@ -69,6 +71,8 @@ h1 img{
 	font: 300 14px 'Lato';
 }
 
+
+/* tab-hd : 헤더 GNB 역할 하는 탭부분 */
 .tab-hd{ 
 	background: #222;
 	width: 100%;
@@ -93,21 +97,17 @@ h1 img{
 			font: 500 14px 'Lato';
 }
 
-.tab-hd a p{ padding-top: 7px; padding-left: 17px; float: left; }
+.tab-hd a p{ 
+	padding-top: 7px; 
+	padding-left: 17px; 
+	float: left; 
+}
 .tab-hd a img{ 
 	width: 7px; 
 	padding-top: 11px; 
 	padding-right: 12px; 
 	float: right;  
 }
-.tab-hd a .colline{ 
-	height: 28px;
-	position: relative;
-	right: -34px; top: -8px;
-}
-/*.tab-hd li:nth-child(2) a{ background: #333; }*/
-/*.tab-hd li:nth-child(2) a .colline{ display: none; }*/
-.tab-hd li a .colline{ display: none; }
 
 
 /* main article */
@@ -117,8 +117,7 @@ h1 img{
 .footer-postion{ height: 40px; width: 100%; }
 .con-area{ 
 	padding-left: 270px; 
-	width: 100%; 
-		/*border: 1px solid cyan;*/ 
+	width: 100%;  
 	height: 100vh;
 	overflow: auto;
 }
@@ -135,7 +134,12 @@ h1 img{
 	overflowX: hidden;
 }
 
-.sidebar li{ display: flex; width: 100%; transition:0.5s; }
+.sidebar li{ 
+	display: flex; 
+	width: 100%; 
+	transition:0.5s; 
+}
+
 .sidebar li a{ 
 	width: 110px; 
 	display: flex;
@@ -146,11 +150,24 @@ h1 img{
 
 .sidebar img{ width: 19px; padding-top: 2px;}
 .sidebar li>p{ font-family:'Lato' }
-.sidebar a>p{ font-family:'Lato'; padding-left: 20px;
-			transform: rotate(0.03deg); padding-top: 2px; }
+.sidebar a>p{
+	font-family:'Lato'; 
+	padding-left: 20px;
+	transform: rotate(0.03deg); 
+	padding-top: 2px; 
+}
 
-.side-para{ padding-left: 18px; padding-top: 10px; padding-bottom: 10px; }
-.sp01, .sp02{ padding-bottom: 32px; font-size: 18px; font-weight: 700; }
+.side-para{ 
+	padding-left: 18px; 
+	padding-top: 10px; 
+	padding-bottom: 10px; 
+}
+.sp01, .sp02{
+	padding-bottom: 32px; 
+	font-size: 18px; 
+	font-weight: 700; 
+}
+
 .sp02{ padding-bottom: 10px; }
 .sp03 img{ padding-left: 15px; padding-right: 18px; }
 .sp03 p{ font-size: 18px; }
@@ -173,25 +190,33 @@ h1 img{
 }
 
 .visual-inner p{ padding-bottom: 10px; }
-.visual-inner>p:nth-child(1){ font: bold 60px 'IBM Plex Mono'; color: #fff;
-							animation: mainMotion 1.25s 0.1s backwards;							
+.visual-inner>p:nth-child(1){ 
+	font: bold 60px 'IBM Plex Mono';
+	color: #fff;
+	animation: mainMotion 1.25s 0.1s backwards;							
 }
-.visual-inner>p:nth-child(2){ font: bold 60px 'IBM Plex Mono'; color: #fff; 
-							padding-left: 100px;
-
-							animation: mainMotion 1.25s 0.8s backwards;
+.visual-inner>p:nth-child(2){ 
+	font: bold 60px 'IBM Plex Mono';
+	color: #fff; 
+	padding-left: 100px;
+	animation: mainMotion 1.25s 0.8s backwards;
 }
-.visual-inner>p:nth-child(3){ font: bold 80px 'IBM Plex Mono'; color: #fff; 
-							padding-left: 170px; /*text-align: center;*/
-							animation: mainMotion 1.25s 2.1s backwards;
+.visual-inner>p:nth-child(3){ 
+	font: bold 80px 'IBM Plex Mono';
+	color: #fff; 
+	padding-left: 170px;
+	animation: mainMotion 1.25s 2.1s backwards;
 }
-.visual-inner>p:nth-child(4){ font: bold 60px 'IBM Plex Mono'; color: #fff; 
-							padding-left: 100px;
-
-							animation: mainMotion 1.25s 5.9s backwards;
+.visual-inner>p:nth-child(4){ 
+	font: bold 60px 'IBM Plex Mono';
+	color: #fff; 
+	padding-left: 100px;
+	animation: mainMotion 1.25s 5.9s backwards;
 }
-.visual-inner>p:nth-child(5){ font: bold 60px 'IBM Plex Mono'; color: #fff;
-							animation: mainMotion 1.25s 6.5s backwards;;
+.visual-inner>p:nth-child(5){ 
+	font: bold 60px 'IBM Plex Mono';
+	color: #fff;
+	animation: mainMotion 1.25s 6.5s backwards;;
  }
 
 
@@ -199,8 +224,12 @@ h1 img{
 
 /* works */
 
-#works{ width: 97%; margin: 0 auto; padding-top: 110px; padding-bottom: 100px; }
-
+#works{
+	width: 97%; 
+	margin: 0 auto; 
+	padding-top: 110px; 
+	padding-bottom: 100px;
+}
 
 h2{ font: bold 40px 'IBM Plex Mono'; color: #fff;  }
 
@@ -218,11 +247,15 @@ h2{ font: bold 40px 'IBM Plex Mono'; color: #fff;  }
 	padding-left: 70px; 
 }
 
-/*.works-ex .Typewriter__cursor{ display: none; }*/
-.card{ width: 90%; margin: 0 auto; 
-	display: flex; flex-wrap: wrap; 
+.card{
+	width: 90%; 
+	margin: 0 auto; 
+	display: flex; 
+	flex-wrap: wrap; 
 	justify-content: space-between;
-	margin-top: 3%; margin-bottom: 2%; }
+	margin-top: 3%; 
+	margin-bottom: 2%;
+}
 
 
 .works-card{ 
@@ -236,16 +269,25 @@ h2{ font: bold 40px 'IBM Plex Mono'; color: #fff;  }
 }
 
 
-.con-card-img{ border-radius: 12px; box-shadow: 0 0 15px rgba(0, 0, 0, 0.25); }
+.con-card-img{ 
+	border-radius: 12px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+}
+
 .con-card-img img{ width: 100%; opacity: 0.35; transition: 1s; }
 
 .con-card-logo img{ transition: 0.5s; }
 
-.works-card:hover .con-card-img img{ width: 100%; opacity: 1; transform: scale(1.04); }
+.works-card:hover .con-card-img img{
+	width: 100%;
+	opacity: 1;
+	transform: scale(1.04);
+}
+
 .works-card:hover .con-card-logo img{ opacity: 0; }
 .works-card:hover .con-card-logo p{ opacity: 0; }
 
-
+/* 카드 설명상자 */
 .card-mouse-over{ 
 	width: 100%; height: 80px; 
 	position: absolute; 
@@ -257,41 +299,76 @@ h2{ font: bold 40px 'IBM Plex Mono'; color: #fff;  }
 	transition: 0.8s;
 }
 
-.explain-hd{ font: 300 24px 'Lato'; color: #333; text-align: center; padding-bottom: 5px; }
-.explain-para{ font: 700 16px 'Lato'; color: #333; text-align: center; }
+.explain-hd{ 
+	font: 300 24px 'Lato'; 
+	color: #333; 
+	text-align: center; 
+	padding-bottom: 5px; 
+}
+.explain-para{ 
+	font: 700 16px 'Lato'; 
+	color: #333; 
+	text-align: center;
+}
 
 .con-card-logo{ position: absolute; }
 
-.c01 .con-card-logo{ top: calc(50% - (124px/2)); left: calc(50% - 100px); }
 .c01 .con-card-logo img{ width: 220px; }
+.c01 .con-card-logo{ 
+	top: calc(50% - (124px/2)); 
+	left: calc(50% - 100px); 
+}
 
 
-.c02 .con-card-logo{ top: calc(50% - (94px/2)); left: calc(50% - 150px); }
 .c02 .con-card-logo img{ width: 300px; }
+.c02 .con-card-logo{ 
+	top: calc(50% - (94px/2)); 
+	left: calc(50% - 150px); 
+}
 
-.c03 .con-card-logo{ top: calc(50% - (166px/2)); left: calc(50% - 150px); }
 .c03 .con-card-logo img{ width: 300px; }
+.c03 .con-card-logo{ 
+	top: calc(50% - (166px/2)); 
+	left: calc(50% - 150px); 
+}
 
-.c04 .con-card-logo{ top: calc(50% - (65px/2)); left: calc(50% - 150px); }
 .c04 .con-card-logo img{ width: 300px; }
+.c04 .con-card-logo{ top: calc(50% - (65px/2)); 
+	left: calc(50% - 150px); 
+}
 
-.c05 .con-card-logo{ top: calc(50% - 24px); left: calc(50% - 145px); }
 .c05 .con-card-logo p{ font: 600 40px 'Lato'; color: #fff; }
+.c05 .con-card-logo{ 
+	top: calc(50% - 24px); 
+	left: calc(50% - 145px); 
+}
 
+ /* 투비컨티뉴 상자 */
 .continue { 
 	background:rgba(255, 255, 255, 0.1);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
-.continue .continue-text{ opacity: 1;
+.continue .continue-text{ 
+	opacity: 1;
 	transition: 0.7s;
 }
-.continue-text p{ font: 600 40px 'Lato'; color: #fff;
-			text-align: center; }
-.continue .continue-text .s{ font-size: 36px; font-weight: 200; }
+.continue-text p{ 
+	font: 600 40px 'Lato'; 
+	color: #fff;
+	text-align: center;
+}
 
-.continue:hover .continue-text{ transform: scale(1.03); opacity: 0.4; }
+.continue .continue-text .s{
+	font-size: 36px;
+	font-weight: 200; 
+}
+
+.continue:hover .continue-text{ 
+	transform: scale(1.03); 
+	opacity: 0.4; 
+}
 
 
 /* Design */
@@ -344,42 +421,40 @@ h2{ font: bold 40px 'IBM Plex Mono'; color: #fff;  }
 }
 
 
+.d01 .con-card-logo img{ width: 300px; }
 .d01 .con-card-logo{ 
 	top: calc(50% - (104px/2)); 
 	left: calc(50% - 150px); }
 
-.d01 .con-card-logo img{ width: 300px; }
-
-
+.d02 .con-card-logo img{ width: 300px; }
 .d02 .con-card-logo{ 
 	top: calc(50% - (76px/2)); 
 	left: calc(50% - 150px); }
 
-.d02 .con-card-logo img{ width: 300px; }
-
+.d03 .con-card-logo img{ width: 300px; }
 .d03 .con-card-logo{ 
 	top: calc(50% - (138px/2)); 
 	left: calc(50% - 150px); }
 
-.d03 .con-card-logo img{ width: 300px; }
-
+.d04 .con-card-logo img{ width: 250px; }
 .d04 .con-card-logo{ 
 	top: calc(50% - (135px/2)); 
 	left: calc(50% - (250px/2)); }
 
-.d04 .con-card-logo img{ width: 250px; }
-
+.d05 .con-card-logo img{ width: 270px; }
 .d05 .con-card-logo{ 
 	top: calc(50% - (39px/2)); 
 	left: calc(50% - 135px); }
 
-.d05 .con-card-logo img{ width: 270px; }
-
+.d06 .con-card-logo p{ font: 600 40px 'Lato'; color: #fff; }
 .d06 .con-card-logo{ 
 	top: calc(50% - 24px); 
 	left: calc(50% - (245px/2)); }
 
-.d06 .con-card-logo p{ font: 600 40px 'Lato'; color: #fff; }
+
+
+
+/* 서브라임을 포트폴리오로 만든 이유 */
 
 #design .card{ padding-bottom: 80px; }
 
@@ -397,6 +472,11 @@ h2{ font: bold 40px 'IBM Plex Mono'; color: #fff;  }
 	transition: 1.5s;
 }
 
+
+
+
+
+
 /* Profile */
 
 #profile{ 
@@ -406,7 +486,11 @@ h2{ font: bold 40px 'IBM Plex Mono'; color: #fff;  }
 	padding-bottom: 100px; 
 }
 
-.profile-inner{ width: 90%; margin: 0 auto; padding-left: 30px; }
+.profile-inner{ 
+	width: 90%; 
+	margin: 0 auto; 
+	padding-left: 30px; 
+}
 
 .about{ 
 		display: flex; 
@@ -416,7 +500,13 @@ h2{ font: bold 40px 'IBM Plex Mono'; color: #fff;  }
 		opacity: 0;
 		transition: 0.7s;
 }
-.about .image{ width: 40%; margin: 0 auto; text-align: center; }
+
+.about .image{ 
+	width: 40%; 
+	margin: 0 auto; 
+	text-align: center; 
+}
+
 .about .info{ width: 60%; }
 .about h3{ font: bold 40px 'IBM Plex Mono'; color: #fff; }
 .about h3 .json-mark{ padding-bottom: 10px; }
@@ -496,6 +586,7 @@ h2{ font: bold 40px 'IBM Plex Mono'; color: #fff;  }
 	padding-top: 20px; 
 }
 
+/* 캐릭터 아이콘 */
 .c-em{ color: #fff; font-weight: 600;}
 .red{ color: #FF3200; }
 .orange{ color: orange; }
@@ -504,9 +595,17 @@ h2{ font: bold 40px 'IBM Plex Mono'; color: #fff;  }
 .blue{ color: #33a9ff; }
 .green{ color: #62ff48; }
 
+
+
+
+
+
 /* Footer */
 #footer{ 
-	position: fixed; bottom: 0; z-index: 10000; width: 100vw;
+	position: fixed; 
+	bottom: 0; 
+	z-index: 10000; 
+	width: 100vw;
 	background-color: #222;		
 }
 
@@ -522,8 +621,3 @@ h2{ font: bold 40px 'IBM Plex Mono'; color: #fff;  }
 .footer-inner p:nth-child(2) { width: 70%; }
 .footer-inner p:nth-child(3) { width: 120px; text-align: right; padding-right: 10px; }
 .footer-inner p:nth-child(4) { width: 10%; text-align: right; }
-
-
-
-
-
