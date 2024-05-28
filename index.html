@@ -56,28 +56,24 @@
 				<a href="index.html" data-top="0" class="main-tab">
 					<p>index.html</p>
 					<img src="images/icon/top-nav.svg" alt="" class='icon'>
-					<img src="images/icon/tab-colline.svg" alt="" class="colline">
 				</a>
 			</li>
 			<li>
 				<a href="#works" data-top="1" class="main-tab">
 					<p>works.html</p>
 					<img src="images/icon/top-nav.svg" alt="" class='icon'>
-					<img src="images/icon/tab-colline.svg" alt="" class="colline">
 				</a>
 			</li>
 			<li>
 				<a href="#design" data-top="2" class="main-tab">
 					<p>design.css</p>
 					<img src="images/icon/top-nav.svg" alt="" class='icon'>
-					<img src="images/icon/tab-colline.svg" alt="" class="colline">
 				</a>
 			</li>
 			<li>
 				<a href="#profile" data-top="3" class="main-tab">
 					<p>profile.json</p>
 					<img src="images/icon/top-nav.svg" alt="" class='icon'>
-					<img src="images/icon/tab-colline.svg" alt="" class="colline">
 				</a>
 			</li>
 		</ul>
@@ -474,25 +470,31 @@
 				<span class='value'>sublime Text 4</span>
 				&#125; <!-- } -->
 			</h2>
+
+			<p class="design-ex de-sublime">
+				&#47;&#42;
+					<span class="blank-space heading">
+						포트폴리오 디자인을 <span class="port-em orange">sublime Text4</span> 스타일로 제작한 이유	
+					</span>
+				&#42;&#47;
+			</p>
+
 			<p class="design-ex de-sublime">
 				&#47;&#42;
 				<span class="blank-space">
-					서브라임이란 단어는 라틴어 [sublimis]에서 유래되었는데요,
+					<span class="port-em">서브라임</span>이란 단어는 라틴어 <span class="port-em">&#91;sublimis&#93;</span>에서 유래되었는데요,
 				</span>
 				<span class="blank-space">
-					limis는 경계를 뜻하고 Sub라는 라틴어 접두사는 ‘-를 넘어서’라는 의미라고 합니다.
+					<span class="port-em">limis</span>는 <span class="port-em">경계</span>를 뜻하고 <span class="port-em">Sub</span>라는 라틴어 접두사는 <span class="port-em">&lsquo;-를 넘어서&rsquo;</span>라는 의미라고 합니다.
 				</span>
 				<span class="blank-space">
-					웹 개발을 시작한 이후로 저는 늘 서브라임 에디터와 성장해왔습니다.
+					웹 개발을 시작한 이후로 저는 늘 <span class="port-em">서브라임 에디터</span>와 함께 <span class="port-em">성장</span>해왔습니다.
 				</span>
 				<span class="blank-space">
-					제가 깊은 애정을 가진 이 텍스트 에디터와 함께 저의 한계를 넘어 전진하겠다는 마음으로 포트폴리오를 디자인했습니다.	
+					제가 깊은 애정을 가진 이 텍스트 에디터와 함께 <span class="port-em">저의 한계를 넘어 전진하겠다는 마음</span>으로 포트폴리오를 디자인했습니다.	
 				</span>
 				<span class="blank-space">
-					또한 서브라임 텍스트의 자유롭고 직관적인 인터페이스를 포트폴리오 반응형으로 녹여내어 
-				</span>
-				<span class="blank-space">
-					저의 프로젝트와 작업 결과물을 효율적으로 전달하고자 했습니다.					
+					또한 서브라임 텍스트의 <span class="port-em">자유롭고 직관적인 인터페이스</span>를 반응형으로 녹여내어, 저의 <span class="port-em">프로젝트와 작업 결과물을 효율적으로 전달</span>하고자 했습니다.
 				</span>
 				&#42;&#47;
 			</p>
@@ -514,13 +516,18 @@
 			let d_card = document.querySelectorAll('.design-card')
 			let designEx = document.querySelector('.design-ex')
 			let presetH2 = document.querySelector('.preset')
-			let presetP = document.querySelectorAll('.de-sublime span')
+			let presetP = document.querySelectorAll('.de-sublime .blank-space')
+			let presetP2 = document.querySelectorAll('.de-sublime .port-em')
 			
 			observer2.observe(designEx)
 			observer2.observe(presetH2)
 			for(i=0; i<6; i++){
 				observer2.observe(d_card[i])
 				observer2.observe(presetP[i])
+			}
+
+			for(e=0; e<12; e++){
+				observer2.observe(presetP2[e])
 			}
 
 		</script>
