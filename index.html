@@ -21,12 +21,32 @@
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/modal.css">
+<link rel="stylesheet" href="css/loading.css">
 <link rel="stylesheet" href="css/mediaquery.css">
 
 <!-- 파비콘 -->
 <link rel="icon" href="images/icon/sublime-icon-pav.png">
 </head>
 <body>
+
+<div class="loading">
+	<div>
+		<img src="images/icon/loading.svg" alt="">
+	</div>
+	<div>Loading</div>
+</div>
+
+<script>
+	
+const loadingPage = document.querySelector(".loading")
+ 
+console.log(loadingPage);
+
+
+
+
+</script>	
+
 
 <header id="header">
 	<div class="top-hd">
@@ -453,6 +473,39 @@
 					</a>
 				</div>
 			</div>
+
+			<h2 class="preset">
+				<span class='css-id'>&#35;preset</span>
+				&#123; <!-- { -->
+				<span class='property'>portfilo</span>
+				&#58; <!-- : -->
+				<span class='value'>sublime Text 4</span>
+				&#125; <!-- } -->
+			</h2>
+			<p class="design-ex de-sublime">
+				&#47;&#42;
+				<span class="blank-space">
+					서브라임이란 단어는 라틴어 [sublimis]에서 유래되었는데요,
+				</span>
+				<span class="blank-space">
+					limis는 경계를 뜻하고 Sub라는 라틴어 접두사는 ‘-를 넘어서’라는 의미라고 합니다.
+				</span>
+				<span class="blank-space">
+					웹 개발을 시작한 이후로 저는 늘 서브라임 에디터와 성장해왔습니다.
+				</span>
+				<span class="blank-space">
+					제가 깊은 애정을 가진 이 텍스트 에디터와 함께 저의 한계를 넘어 전진하겠다는 마음으로 포트폴리오를 디자인했습니다.	
+				</span>
+				<span class="blank-space">
+					또한 서브라임 텍스트의 자유롭고 직관적인 인터페이스를 포트폴리오 반응형으로 녹여내어 
+				</span>
+				<span class="blank-space">
+					저의 프로젝트와 작업 결과물을 효율적으로 전달하고자 했습니다.					
+				</span>
+				&#42;&#47;
+			</p>
+
+
 		</section>
 		<!-- 카드 animation -->
 		<script>
@@ -468,10 +521,14 @@
 
 			let d_card = document.querySelectorAll('.design-card')
 			let designEx = document.querySelector('.design-ex')
+			let presetH2 = document.querySelector('.preset')
+			let presetP = document.querySelectorAll('.de-sublime span')
 			
 			observer2.observe(designEx)
+			observer2.observe(presetH2)
 			for(i=0; i<6; i++){
 				observer2.observe(d_card[i])
+				observer2.observe(presetP[i])
 			}
 
 		</script>
