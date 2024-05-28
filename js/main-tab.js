@@ -116,7 +116,9 @@ function showSection(index) {
         langSet[index].style.display = 'block';
 }
 
-// 초기 설정: URL의 해시값에 따라 해당 섹션을 보여줌.
+const loadingPage = document.querySelector(".loading")
+
+//URL의 해시값에 따라 해당 섹션을 보여줌.
 window.onload = () => {
         const hash = window.location.hash.substring(1); // URL의 해시값 GET.
         
@@ -130,7 +132,8 @@ window.onload = () => {
         	showSection(index);
         }
 
-		loadingPage.style.display="none"; 
+	//로딩페이지
+	loadingPage.style.display="none"; 
 };
 
 
