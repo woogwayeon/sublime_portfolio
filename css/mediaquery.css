@@ -334,7 +334,7 @@ h2{ font-size: 32px; }
 }
 
 
-@media all and (max-width:767px) {
+@media all(hover: hover) and (max-width:767px) {
 
 /* 해더, 푸터 빈공간 box */
   .position-area{ height: 68px; width: 100%; }
