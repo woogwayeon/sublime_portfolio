@@ -536,6 +536,48 @@ h2{ font: bold 40px 'IBM Plex Mono'; color: #fff;  }
 .info h3:nth-child(2),.info h3:nth-child(11){ padding-left: 60px; }
 .about .info .link-underline{ text-decoration: underline; }
 
+#profile .about .info .h-ex{
+	padding: 0;
+	width: 220px;
+	height: 45px;
+	line-height: 45px;
+	background: #333;
+	border-radius: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+	font-weight: 500;
+	font-size: 16px;
+	text-align: center;
+	position: relative;
+	left: 180px;
+	top: -10px;
+	opacity: 0;
+	transition: 0.6s;
+}
+
+  .info h3:nth-child(13){
+/*    border: 1px solid white;*/
+    position: relative;
+    top: -45px;
+  }
+
+  .info h3:nth-child(12){
+/*    border: 1px solid cyan;*/
+    position: relative;
+    top: -45px;
+  }
+
+
+
+
+
+
+
+
+
+
+
 .ability{ opacity: 0; transition:0.7s; }
 
 .ability-para{ 
