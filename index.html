@@ -5,17 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>hello portfolio</title>
 
-<!-- Google Fonts : IBM Plex Mono -->
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-
-<!-- Google Fonts : Lato -->
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-
-<!-- Google Fonts : Noto Sans KR -->
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
-
-<!-- Google icon -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@32,400,0,0" />
+<!-- 구글 웹아이콘 -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 <!-- CSS -->
 <link rel="stylesheet" href="css/normalize.css">
@@ -29,903 +20,779 @@
 </head>
 <body>
 
-<div class="loading">
-	<div>
-		<img src="images/icon/loading.svg" alt="">
+<div id="wrap">
+
+ <!-- 로딩 페이지 -->
+	<div class="loading">
+		<div>
+			<img src="images/icon/loading.svg" alt="">
+		</div>
+		<div>Loading</div>
+		<div>
+			&#9829;&#40;&#42;&#94;&#65312;&#94;&#42;&#41;&#9829;
+		</div>
 	</div>
-	<div>Loading</div>
-	<div>
-		&#9829;&#40;&#42;&#94;&#65312;&#94;&#42;&#41;&#9829;
-	</div>
+
+	<header id="header">
+
+	   <!-- 최상단 헤더 서브라임 로고 및 ~ -->
+		<div class="top-hd">
+			<div class="inner">
+				<h1><img src="images/icon/sublime-icon.png" alt="sublime portfolio"></h1>
+				<p>seoyeon - sublime text <span class="hd-point-size">&#40;PORTFOLIO&#41;</span></p>
+			</div>
+		</div>
+
+	   <!-- 헤더 탭메뉴 -->
+		<div class="tab-hd">
+			<ul>
+				<li>&nbsp;
+					<img src="images/icon/top-nav.svg" alt="">
+				</li>
+				<li>
+					<a href="index.html" data-top="0" class="main-tab">
+						<p>index.html</p>
+						<img src="images/icon/top-nav.svg" alt="" class='icon'>
+					</a>
+				</li>
+				<li>
+					<a href="#works" data-top="1" class="main-tab">
+						<p>works.html</p>
+						<img src="images/icon/top-nav.svg" alt="" class='icon'>
+					</a>
+				</li>
+				<li>
+					<a href="#design" data-top="2" class="main-tab">
+						<p>design.css</p>
+						<img src="images/icon/top-nav.svg" alt="" class='icon'>
+					</a>
+				</li>
+				<li>
+					<a href="#profile" data-top="3" class="main-tab">
+						<p>profile.json</p>
+						<img src="images/icon/top-nav.svg" alt="" class='icon'>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+	</header>
+
+	<div class="position-area">&nbsp;</div>
+
+	<article id="contatiner">
+
+	   	<!-- 사이드바 메뉴 -->
+		<nav>
+			<ul class="sidebar">
+
+				<li class="side-para sp01">OPEN FILES</li>
+				<li class="side-para sp02">FOLDERS</li>
+				<li class="side-para sp03">
+					<img src="images/icon/folder.svg" alt="main-folder">
+					<p>Portfolio</p>
+				</li>
+
+				<li class="side01 main-side">
+					<a href="index.html" data-side="0">
+						<img src="images/icon/html5.svg" alt="main visual page">
+						<p>index.html</p>
+					</a>
+				</li>
+				<li class="side02 main-side">
+					<a href="#works" data-side="1">
+						<img src="images/icon/html5.svg" alt="publishing works page">
+						<p>works.html</p>
+					</a>
+				</li>
+				<li class="side03 main-side">
+					<a href="#design" data-side="2">
+						<img src="images/icon/css3.svg" alt="design works page">
+						<p>design.css</p>
+					</a>
+				</li>
+				<li class="side04 main-side">
+					<a href="#profile" data-side="3">
+						<img src="images/icon/json-icon.png" alt="profile page">
+						<p>profile.json</p>
+					</a>
+				</li>
+			
+			</ul>
+		</nav>
+
+		<!-- 전체 컨텐츠 -->
+		<div class="con-area">
+
+		   <!-- VISUAL (index.~) TAB -->		
+			<section id="visual" class="main-content">		
+				<div class="visual-inner">
+					<p>&lt;<span class="att">head</span>&gt;</p>
+					<p>&lt;<span class="att">title</span>&gt;</p>
+					<p class="writing"></p>
+					<p>&lt;&#47;<span class="att">title</span>&gt;</p>
+					<p>&lt;&#47;<span class="att">head</span>&gt;</p>
+				</div>
+			</section>
+
+			<!-- 타이핑 플러그인 -->
+			<script src="https://www.cssscript.com/demo/simple-typewriter-effect-pure-javascript-typewriterjs/typewriter.js"></script>
+			<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+			<script>
+				let typeW = document.querySelector('.writing');
+				let typewriter = new Typewriter(typeW, {
+					loop:false
+				});
+
+				typewriter
+					.pauseFor(2250)
+					.typeString("Hello,")
+					.pauseFor(400)
+					.typeString("Portfolio")
+					.start();
+			</script>
+
+		   <!-- Works TAB -->		
+			<section id="works" class="main-content">
+				<h2>
+					&lt;<span class='att'> article</span>
+					<span class='property'>id</span>&#61;
+					&ldquo;<span class='value'>works</span>&rdquo;
+					&gt;
+				</h2>
+
+				<p class="works-ex">
+					&lt;<span class='att'>p</span>&gt;<br>
+					<span class="blank-space">
+						퍼블리싱 작업물입니다&#33;
+					</span>
+					<span class="blank-space">
+						HTML, CSS, JavaScript를 활용하여 제작했습니다
+					</span>
+					&lt;&#47;<span class='att'>p</span>&gt;
+				</p>
+				
+
+				<div class="card">
+
+					<div class="works-card c01">
+						<a href="sub-works.html" target="_blank">
+							<div class="con-card-img">
+								<img src="images/con-card/flower.jpg" alt="">
+							</div>
+							<div class="con-card-logo">
+								<img src="images/logo/flower-logo.png" alt="">
+							</div>
+							<div class="card-mouse-over">
+								<p class="explain-hd">
+									Full Site publishing
+								</p>
+								<p class="explain-para">
+									HTML, CSS, JavaScript
+								</p>
+							</div>
+						</a>
+					</div>
+
+					<div class="works-card c02">
+						<a href="sub-works.html" target="_blank">
+							<div class="con-card-img">
+								<img src="images/con-card/sparco.jpg" alt="">
+							</div>
+							<div class="con-card-logo">
+								<img src="images/logo/sparco-logo.svg" alt="">
+							</div>
+							<div class="card-mouse-over">
+								<p class="explain-hd">
+									Responsive Web
+								</p>
+								<p class="explain-para">
+									Media Query &amp; Swiper Carousel
+								</p>
+							</div>
+						</a>
+					</div>
+
+					<div class="works-card c03">
+						<a href="https://woogwayeon.github.io/sub_portfolio/sub-works-gog3.html" target="_blank">
+							<div class="con-card-img">
+								<img src="images/con-card/gog3.jpg" alt="">
+							</div>
+							<div class="con-card-logo">
+								<img src="images/logo/gog-logo.png" alt="">
+							</div>
+							<div class="card-mouse-over">
+								<p class="explain-hd">
+									Main &amp; Sub page publishing
+								</p>
+								<p class="explain-para">
+									youtube, spotify embeding
+								</p>
+							</div>
+						</a>
+					</div>
+
+					<div class="works-card c04">
+						<a href="sub-works.html" target="_blank">
+							<div class="con-card-img">
+								<img src="images/con-card/sony.jpg" alt="">
+							</div>
+							<div class="con-card-logo">
+								<img src="images/logo/sony-logo.png" alt="">
+							</div>
+							<div class="card-mouse-over">
+								<p class="explain-hd">
+									Shopping-cart
+								</p>
+								<p class="explain-para">
+									table TAG practical useing
+								</p>
+							</div>
+						</a>
+					</div>
+
+					<div class="works-card c05">
+						<a href="sub-works.html" target="_blank">
+							<div class="con-card-img">
+								<img src="images/con-card/responsive.jpg" alt="">
+							</div>
+							<div class="con-card-logo">
+								<p>Responsive Web</p>
+							</div>
+							<div class="card-mouse-over">
+								<p class="explain-hd">
+									Responsive Web
+								</p>
+								<p class="explain-para">
+									Media Query &amp; CSS transition
+								</p>
+							</div>
+						</a>
+					</div>
+
+					<div class="works-card continue">
+						<div class="continue-text">
+							<p>o&#40;&#42;&#94;&#64;&#94;&#42;&#41;o</p>
+							<p class="s">To Be Continue</p>
+						</div>
+					</div>
+				</div>
+
+				<h2>&lt;&#47;<span class="att">article</span>&gt;</h2>
+			</section>
+
+		   <!-- DESIGN TAB -->
+			<section id="design" class="main-content">
+				<h2>
+					<span class='css-id'>&#35;design</span>
+					&#123; <!-- { -->
+					<span class='property'>display</span>
+					&#58; <!-- : -->
+					<span class='value'>block</span>
+					&#125; <!-- } -->
+				</h2>
+
+				<p class="design-ex">
+					&#47;&#42;
+					<span class="blank-space">
+					개인 디자인 작업물입니다&#33;
+					</span>
+					<span class="blank-space">
+					Figma, Photoshop, illustrator 등의 디자인 툴을 이용했습니다
+					</span>
+					&#42;&#47;
+				</p>
+
+				<div class="card">
+
+					<div class="design-card d01">
+						<a href="https://woogwayeon.github.io/sub_portfolio/sub-design-jellycat.html" target="_blank">
+							<div class="con-card-img">
+								<img src="images/con-card/jellycat.jpg" alt="">
+							</div>
+							<div class="con-card-logo">
+								<img src="images/logo/jelly-logo.png" alt="">
+							</div>
+							<div class="design-mouse-over">
+								<p class="explain-hd">
+									Mobile design
+								</p>
+								<p class="explain-para">
+									Main &amp; Sub page design, Figma
+								</p>
+							</div>
+						</a>
+					</div>
+
+					<div class="design-card d02">
+						<a href="https://woogwayeon.github.io/sub_portfolio/sub-design-uniqlo.html" target="_blank">
+							<div class="con-card-img">
+								<img src="images/con-card/uniqlo.jpg" alt="">
+							</div>
+							<div class="con-card-logo">
+								<img src="images/logo/uni-logo.png" alt="">
+							</div>
+							<div class="design-mouse-over">
+								<p class="explain-hd">
+									Website Redesign
+								</p>
+								<p class="explain-para">
+									Main &#43; Select page design, Photoshop
+								</p>
+							</div>
+						</a>
+					</div>
+
+					<div class="design-card d03">
+						<a href="https://woogwayeon.github.io/sub_portfolio/sub-design-starcraft2.html" target="_blank">
+							<div class="con-card-img">
+								<img src="images/con-card/star2.jpg" alt="">
+							</div>
+							<div class="con-card-logo">
+								<img src="images/logo/star2-logo.png" alt="">
+							</div>
+							<div class="design-mouse-over">
+								<p class="explain-hd">
+									Module Grid
+								</p>
+								<p class="explain-para">
+									Website Mainpage Redesign, Photoshop
+								</p>
+							</div>
+						</a>
+					</div>
+
+					<div class="design-card d04">
+						<a href="https://woogwayeon.github.io/sub_portfolio/sub-design-DECCA.html" target="_blank">
+							<div class="con-card-img">
+								<img src="images/con-card/decca.jpg" alt="">
+							</div>
+							<div class="con-card-logo">
+								<img src="images/logo/decca-logo.svg" alt="">
+							</div>
+							<div class="design-mouse-over">
+								<p class="explain-hd">
+									Column Grid
+								</p>
+								<p class="explain-para">
+									Website Mainpage Redesign, Photoshop
+								</p>
+							</div>
+						</a>
+					</div>
+
+					<div class="design-card d05">
+						<a href="https://woogwayeon.github.io/sub_portfolio/sub-design-bazaar.html" target="_blank">
+							<div class="con-card-img">
+								<img src="images/con-card/bazaar.jpg" alt="">
+							</div>
+							<div class="con-card-logo">
+								<img src="images/logo/bazaar-logo.svg" alt="">
+							</div>
+							<div class="design-mouse-over">
+								<p class="explain-hd">
+									Website main
+								</p>
+								<p class="explain-para">
+									Website Mainpage Redesign, Photoshop
+								</p>
+							</div>
+						</a>
+					</div>
+
+					<div class="design-card d06">
+						<a href="sub-works.html" target="_blank">
+							<div class="con-card-img">
+								<img src="images/con-card/poster.jpg" alt="">
+							</div>
+							<div class="con-card-logo">
+								<p>Poster &amp; Typo</p>
+							</div>
+							<div class="design-mouse-over">
+								<p class="explain-hd">
+									Typography
+								</p>
+								<p class="explain-para">
+									Tradition Poster, Using Design tool
+								</p>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<h2 class="preset">
+					<span class='css-id'>&#35;preset</span>
+					&#123; <!-- { -->
+					<span class='property'>portfilo</span>
+					&#58; <!-- : -->
+					<span class='value'>sublime Text 4</span>
+					&#125; <!-- } -->
+				</h2>
+
+				<p class="design-ex de-sublime">
+					&#47;&#42;
+						<span class="blank-space heading">
+							포트폴리오 디자인을 <span class="port-em orange">sublime Text4</span> 스타일로 제작한 이유	
+						</span>
+					&#42;&#47;
+				</p>
+
+				<p class="design-ex de-sublime">
+					&#47;&#42;
+					<span class="blank-space">
+						<span class="port-em">서브라임</span>이란 단어는 라틴어 <span class="port-em">&#91;sublimis&#93;</span>에서 유래되었는데요,
+					</span>
+					<span class="blank-space">
+						<span class="port-em">limis</span>는 <span class="port-em">경계</span>를 뜻하고 <span class="port-em">Sub</span>라는 라틴어 접두사는 <span class="port-em">&lsquo;-를 넘어서&rsquo;</span>라는 의미라고 합니다.
+					</span>
+					<span class="blank-space">
+						웹 개발을 시작한 이후로 저는 늘 <span class="port-em">서브라임 에디터</span>와 함께 <span class="port-em">성장</span>해왔습니다.
+					</span>
+					<span class="blank-space">
+						제가 깊은 애정을 가진 이 텍스트 에디터와 함께 <span class="port-em">저의 한계를 넘어 전진하겠다는 마음</span>으로 포트폴리오를 디자인했습니다.	
+					</span>
+					<span class="blank-space">
+						또한 서브라임 텍스트의 <span class="port-em">자유롭고 직관적인 인터페이스</span>를 반응형으로 녹여내어, 저의 <span class="port-em">프로젝트와 작업 결과물을 효율적으로 전달</span>하고자 했습니다.
+					</span>
+					&#42;&#47;
+				</p>
+
+
+			</section>
+			
+		   <!-- Profile TAB -->
+			<section id="profile" class="main-content">
+				<h2>&#123;</h2>
+
+					<div class="profile-inner">
+
+						<div class="about">
+							<div class="image">
+								<img src="images/face-cir.svg" alt="미모티콘 프로필">
+							</div>
+							<div class="info">
+								<h3>
+									<span class="att">&ldquo;Profile&rdquo;</span> 
+									<span class="json-mark">&#58;&#91;</span>
+								</h3>
+								<h3><span class="json-mark">&#123;</span></h3>
+								<p><span class="value">Name</span> &nbsp;&#58;&nbsp; 고은아 <span class="json-mark-s">, </span></p>
+								<p><span class="value">Phone</span> &nbsp;&#58;&nbsp; 010 - 5244 - 0835 <span class="json-mark-s">, </span></p>
+								<p>
+									<span class="value">E-mail</span>
+									&nbsp;&#58;&nbsp;
+									<a href="mailto:woogwayeon@icloud.com" class="link-underline">
+									woogwayeon&#64;icloud.com
+									</a>
+									<span class="json-mark-s">, </span>
+								</p>
+								<p><span class="value">Birth</span> &nbsp;&#58;&nbsp; 1999. 08. 05 <span class="json-mark-s">, </span></p>
+								<p><span class="value">Address</span> &nbsp;&#58;&nbsp; 서울 강북구 <span class="json-mark-s">, </span></p>
+								<p><span class="value">License</span> &nbsp;&#58;&nbsp; 웹디자인기능사, GTQ / GTQi 1급 <span class="json-mark-s">, </span></p>
+								<p>
+									<span class="value">Portfolio</span> &nbsp;&#58;&nbsp; 
+									<a href="https://woogwayeon.github.io/sublime_portfolio/" class="link-underline">woogwayeon.github.io/sublime_portfolio</a><span class="json-mark-s"> , </span>
+								</p>
+								<p>
+									<span class="value">PDF</span> &nbsp;&#58;&nbsp; 
+									<a href="http://naver.me/IDo41aAF" class="link-underline link-cloud" target="_blank">포트폴리오.pdf</a> 
+								</p>
+								<p class="h-ex">Naver Mybox로 연결됩니다</p>
+								<h3><span class="json-mark">&#125;</span></h3>
+								<h3><span class="json-mark">&#93;</span></h3>
+							</div>
+						</div>
+
+						<div class="ability">
+							<div class="ability-para">
+								<h3>
+									<span class="att">&ldquo;Ability&rdquo;</span> 
+									<span class="json-mark">&#58;&#91;&nbsp;</span>
+								</h3>
+								<p>	
+									<span class="json-mark-s">&nbsp;&nbsp;&#123;&nbsp;</span>
+									<span class="value">&nbsp;Tip&nbsp;</span>
+									&nbsp;&#58;&nbsp; 
+									카드를 클릭하면 기술에 대한 제 수준을 보다 자세히 확인하실 수 있어요&#33;
+									<span class="json-mark-s">&nbsp;&#125;&nbsp;</span>
+								</p>
+							</div>
+
+							<div class="ability-card-wrap">
+								<div class="a-card">
+									<div class="a-img">
+										<img src="images/icon/html5.svg" alt="html5">
+									</div>
+									<div class="a-heading">
+										<p>HTML5</p>
+									</div>
+								</div>
+								<div class="a-card">
+									<div class="a-img">
+										<img src="images/icon/css3.svg" alt="css3">
+									</div>
+									<div class="a-heading">
+										<p>CSS3</p>
+									</div>
+								</div>
+								<div class="a-card">
+									<div class="a-img">
+										<img src="images/icon/js-icon.svg" alt="JavaScript ES6">
+									</div>
+									<div class="a-heading">
+										<p>JavaScript</p>
+									</div>
+								</div>
+								<div class="a-card">
+									<div class="a-img">
+										<img src="images/icon/figma-icon.svg" alt="Figma" class="figma-icon">
+									</div>
+									<div class="a-heading">
+										<p>Figma</p>
+									</div>
+								</div>
+								<div class="a-card">
+									<div class="a-img">
+										<img src="images/icon/psd-icon.svg" alt="Photoshop">
+									</div>
+									<div class="a-heading">
+										<p>Photoshop</p>
+									</div>
+								</div>
+								<div class="a-card">
+									<div class="a-img">
+										<img src="images/icon/ai-icon.svg" alt="illustrator">
+									</div>
+									<div class="a-heading">
+										<p>illustrator</p>
+									</div>
+								</div>
+							</div>
+
+							<h3><span class="json-mark">&nbsp;&nbsp;&nbsp;&#93;</span></h3>
+						</div>
+
+						<div class="character">
+							<div class="chracter-para">
+								<h3>
+									<span class="att">&ldquo;Character&rdquo;</span> 
+									<span class="json-mark">&#58;&nbsp;&ldquo;&nbsp;</span>
+								</h3>
+								<!--<p>
+									저는 <span class="c-em">기록</span> <span class="material-symbols-rounded orange">edit_calendar</span> 을 좋아하고, <span class="c-em">신뢰</span> <span class="material-symbols-rounded red">volunteer_activism</span> 를 중요하게 생각하는 사람이에요.<br>
+									<span class="c-em">데드라인 엄수</span>를 위해 <span class="c-em">꼼꼼한 계획</span> <span class="material-symbols-rounded yellow">done_outline</span> 과 <span class="c-em">시간 관리</span> <span class="material-symbols-rounded blue">alarm_on</span> 에 항상 힘쓰고 있어요.<br>
+									무서운 일이 생기면 겁나지 않을 때 까지 부딛쳐 해결하는 <span class="c-em">도전 정신</span> <span class="material-symbols-rounded pink">sports_kabaddi</span> <span class="c-em">&#33;</span> <br>
+									&rarr; <span class="c-em">긍정 파워가 넘쳐요</span> <span class="material-symbols-rounded yellow">person_play</span><br>
+									사람들과 조화로운 관계를 추구하기에, 그룹 안에서는 모두와 <span class="c-em">협심</span> <span class="material-symbols-rounded green">psychiatry</span> 하여 <span class="c-em">팀이 얻을 수 있는 최상의 목표를 성취</span>하려 노력해요.
+								</p> -->
+
+								<p>
+									<span class="material-symbols-rounded red">volunteer_activism</span>&nbsp;&nbsp;&nbsp;저는 <span class="c-em">기록</span>을 좋아하고, <span class="c-em">신뢰</span>를 중요하게 생각하는 사람이에요.<br>
+									<span class="material-symbols-rounded blue">alarm_on</span>&nbsp;&nbsp;&nbsp;<span class="c-em">데드라인 엄수</span>를 위해 <span class="c-em">꼼꼼한 계획</span>과 <span class="c-em">시간 관리</span>에 항상 힘쓰고 있어요.<br>
+									<span class="material-symbols-rounded pink">sports_kabaddi</span>&nbsp;&nbsp;&nbsp;무서운 일이 생기면 겁나지 않을 때 까지 부딛쳐 해결하는 <span class="c-em">도전 정신 &#33;</span> <br>
+									<span class="material-symbols-rounded yellow">person_play</span>&nbsp;&nbsp;&nbsp;<span class="c-em">긍정 파워</span>가 넘쳐요.<br>
+									<span class="material-symbols-rounded green">psychiatry</span>&nbsp;&nbsp;&nbsp;사람들과 <span class="c-em">조화로운 관계</span>를 추구하기에, 그룹 안에서는 모두와 <span class="c-em">협심</span>하여 <span class="c-em">팀이 얻을 수 있는 최상의 목표를 성취</span>하려 노력해요.
+								</p>
+								<h3><span class="json-mark">&rdquo;</span></h3>
+							</div>
+
+						</div>
+
+					  <!-- 할 수 있어요 모달창 -->
+						<!-- HTML Ability -->
+						<div class="doit">
+							<span class="blind">웹페이지 정보전달 및 문서작성을 위한 HTML로 어떤 일을 할 수 있는지 기술해두었습니다.</span>
+							
+							<div class="heading">
+								<img src="images/icon/dev-icon.svg" alt="develog modal icon">
+								<p><span class="m-html">HTML</span>을 이용해서 이런 일을 할 수 있어요</p>
+							</div>
+							<div class="para">
+								<p>Basic HTML Tag를 사용하여 <span class="m-para-em">Web, Mobile markup</span>합니다.</p>
+								<p>HTML5 기준 3WC에서 권장하는 웹 표준에 맞는 페이지를 구사하고 Emmet을 활용한 효율적인 골격을 제작합니다.</p>
+								<p>HTML tag에 <span class="m-para-em">CSS &#47; JS mouse event 연계</span>하여 웹 및 모바일 페이지에 동작을 구현합니다.</p>
+								<p>&lt;ul&gt;, &lt;li&gt; Tag를 목록 정렬 및 웹 페이지 구조 응용에 활용합니다.</p>
+								<p>&lt;table&gt; Tag 활용하여 게시판 및 장바구니 페이지를 제작합니다.</p>
+								<p>&lt;iframe&gt; 연결을 통해 외부 소스를 홈페이지 내로 임베드합니다. <span class="annotation">&lt; &#33;-- 유투브, 스포티파이 등 -- &gt;</span></p>
+								<p>Web fonts 및 web icon 삽입하여 어느 브라우저에서도 최대한 같은 환경을 제공할 수 있게 페이지를 제작합니다.</p>
+								<p>선택자를 이용하여 기본적인<span class="m-para-em">웹 접근성</span>을 구현합니다.<span class="annotation">&lt; &#33;-- skip navigation, blind 처리 등 -- &gt;</span></p>
+								<p>마크업 내 Semantic Tag 사용으로 코드 가독성 및 효율성을 증가시켰습니다.</p>
+								<p>&lt;img&gt;, &lt;map name=&ldquo; &rdquo;&gt;, &lt;area&gt; Tag 이용하여 이미지맵 제작이 가능합니다.</p>
+								<p>&lt;fieldset&gt;, &lt;legend&gt;, &lt;form&gt;, &lt;label&gt; 사용하여 <span class="m-para-em">Login, out 및 submit 폼 제작</span>이 가능합니다.</p>
+							</div>
+							<div class="done">
+								닫기
+							</div>
+						
+						</div>
+
+						<!-- CSS Ability -->
+						<div class="doit">
+							<span class="blind">웹페이지 디자인을 위한 CSS로 어떤 일을 할 수 있는지 기술해두었습니다.</span>
+							
+							<div class="heading">
+								<img src="images/icon/dev-icon.svg" alt="develog modal icon">
+								<p><span class="att">CSS</span>를 이용해서 이런 일을 할 수 있어요</p>
+							</div>
+							<div class="para">
+								<p>Pseudo elements를 이용하여 hover, focus시 effect 만들어냅니다.</p>
+								<p>flex-box / float 등 css property 사용하여 <span class="m-para-em">Web & Mobile Layout</span> 제작이 가능합니다.</p>
+								<p>Pseudo class 사용, markup 및 Selector 우선순위 고려하여 <span class="m-para-em">기존 css file을 유지보수</span>합니다.</p>
+								<p><span class="m-para-em">blind, skip-navigation</span>에 대한 css작성하여 기본적인 <span class="m-para-em">웹 접근성</span> 구현합니다.</p>
+								<p>transition property 연계하여 smooth animation 적용이 가능합니다.</p>
+								<p>background-attachment 사용하여 간단한 scroll 착시 및 배경효과를 줄 수 있습니다.</p>
+								<p>filter + mouse hover 기능으로 image tone이 조정되는 animation 구현하고 및 간단한 색감을 조정합니다.</p>
+								<p>calc 함수를 사용하여 flex, grid layout의 계산이 필요한 부분 및 단위를 효율적으로 처리합니다.</p>
+								<p>@keyframes / amimation 사용, JS와 연계하여 동적인 Modal 및 GNB ui 제작합니다.</p>
+								<p>@media <span class="annotation">/* 미디어쿼리 */</span>를 사용하여 <span class="m-para-em">반응형 페이지에 대응합니다.</span></p>
+								<p>transform property와 animation 응용을 통해 글자 및 이미지에 동적인 효과 추가가 가능합니다.</p>
+								<p>각종 단위(vw, em, rem, %)를 사용할 수 있고 반응형 페이지에 대응 가능합니다.</p>
+								<p>Position 속성을 이해하고 여러 모션에 응용 적용하고 디자인에 올바른 속성값을 부여합니다.</p>
+							</div>
+							<div class="done">
+								닫기
+							</div>
+						
+						</div>
+
+						<!-- JavaScript Ability -->
+						<div class="doit">
+							<span class="blind">웹페이지 개발을 위한 JavaScript로 어떤 일을 할 수 있는지 기술해두었습니다.</span>
+							
+							<div class="heading">
+								<img src="images/icon/dev-icon.svg" alt="develog modal icon">
+								<p><span class="m-js">JavaScript</span>를 이용해서 이런 일을 할 수 있어요</p>
+							</div>
+							<div class="para">
+								<p>DOM에 대해 이해하고 코드를 제작하며 관련 issue에 대응합니다.</p>
+								<p>function을 정의하여 프로그램의 로직을 구현하거나 객체 내부 Method로 활용합니다.</p>
+								<p>alert, prompt, comfirm 등 내장 Method를 사용해서 Browser 기본 알림 및 응답 폼을 제작합니다.</p>
+								<p>innerText, innerHTML를 이용해 사용자에게 입력받은 값을 출력하거나 event와 연계하여 각종 UI를 구현합니다.</p>
+								<p>addEventListener를 HTML / CSS 연동하여 GNB, LNB, modal 등 동작을 제작합니다.</p>
+								<p>for, forEach등 반복 명령을 사용해 효율적인 로직을 세우고, 반복작업을 단순화할 수 있습니다.</p>
+								<p>if, swich문을 사용하여 특정 상황 및 변수를 다양한 상황에서 비교 및 활용하고 코드 제어에 활용합니다.</p>
+								<p>object(객체형), Array(자료형), map function을 사용하여 효율적인 Card Layout 구현이 가능합니다.</p>
+								<p>Swiper, AOS, Masony 등 JS plugin 활용하여 웹 페이지 동작 생성이 가능합니다.</p>
+								<p>Svg와 CSS animation을 이용, getTotalLength Method를 통해 선/면의 흐름 모션을 구현합니다.</p>
+								<p>if문과 cloneNode, appendChild Method를 사용하여 Gallery 및 carousel 제작이 가능합니다.</p>
+								<p>scrollY, scrollX property를 scroll event와 구성하여 scroll시 motion을 생성합니다.</p>
+								<p>IntersectionObserver Object를 이용해서 뷰포트 상태 변화에 따른 scroll motion을 제작합니다.</p>
+								<p>load 이벤트 핸들러를 이용한 로딩페이지 구현과 부모창과 자식창 사이 명령 제어가 가능합니다.</p>
+								<p>resize event를 이용하여 반응형 웹 제작 시 JavaScript코드 및 HTML,CSS를 조율합니다.</p>
+								<p>jQuery 라이브러리 구문 이용하여 간단한 로직을 구현할 수 있습니다.</p>
+							</div>
+							<div class="done">
+								닫기
+							</div>
+						
+						</div>
+
+						<!-- Figma Ability -->
+						<div class="doit">
+							<span class="blind">피그마 디자인툴을 활용해서 할 수 있는 일들을 적어두었습니다.</span>
+							
+							<div class="heading">
+								<img src="images/icon/pentool-icon.svg" alt="develog modal icon">
+								<p><span class="m-figma">Figma</span>의 이런 기능을 활용할 수 있어요</p>
+							</div>
+							<div class="para">
+								<p>디자이너나 개발자와 협업하여 피그마를 통해 실시간으로 디자인 작업을 공유하고 수정합니다.</p>
+								<p>Frame, Page를 분리하여 작업하고 각 영역에 시안을 제작하여 관리합니다.</p>
+								<p>Basic tool, Pathfiner, Mask등을 사용해 이미지 및 도형을 편집하고 디자인합니다.</p>
+								<p>각종 Plugin 및 확장 기능을 활용하여 디자인 작업을 자동화하고 생산성을 향상시켰습니다.</p>
+								<p>Auto Layout, Constraints를 이용한 디자인 구조 제작 및 관리합니다.</p>
+								<p>Components를 사용하여 반복 작업을 효율적으로 처리, 시안 수정 시 용이하게 제작합니다.</p>
+								<p>서류 자료 제작 및 프리젠테이션 탬플릿 활용 가능합니다.</p>
+								<p>다양한 화면 크기 및 디바이스에 맞는 반응형 디자인을 구현합니다.</p>
+							</div>
+							<div class="done">
+								닫기
+							</div>
+						
+						</div>
+
+						<!-- Photoshop Ability -->
+						<div class="doit">
+							<span class="blind">포토샵 툴을 활용해서 할 수 있는 일들을 적어두었습니다.</span>
+							
+							<div class="heading">
+								<img src="images/icon/pentool-icon.svg" alt="develog modal icon">
+								<p><span class="m-psd">Photoshop</span>의 이런 기능을 활용할 수 있어요</p>
+							</div>
+							<div class="para">
+								<p>gradient와 opacity 조절을 통해 동적인 색상 전환을 구현할 수 있습니다.</p>
+								<p>Pen 및 Magic Wand tool을 이용하여 이미지를 조정하고 보정합니다.</p>
+								<p>이미지 크기 조절 및 파일 포멧을 변경하고 필요에 따라 해상도를 조절하여 활용합니다.</p>
+								<p>Action 및 자동화 기능을 활용하여 작업을 효율화합니다.</p>
+								<p>Color Balance, Hue/saturate, curves등을 활용하여 이미지의 색감과 명암을 조정합니다.</p>
+								<p>Layer Style을 활용하여 그래픽적인 효과를 적용하고 편집합니다.</p>
+								<p>Blending Mode를 활용하여 이미지의 색조와 투명도를 조절하고 자연스럽게 합성합니다.</p>
+								<p>Artboard 기능으로 웹 및 모바일 애플리케이션의 UI/UX 디자인 작업 수행이 가능합니다.</p>
+								<p>Artboard 관리를 통해 프로토타입 및 시안 작업을 효과적으로 조직합니다.</p>
+							</div>
+							<div class="done">
+								닫기
+							</div>
+						
+						</div>
+
+						<!-- illustrator Ability -->
+						<div class="doit">
+							
+							<div class="heading">
+								<img src="images/icon/pentool-icon.svg" alt="develog modal icon">
+								<p><span class="css-id">illustrator</span>의 이런 기능을 활용할 수 있어요</p>
+							</div>
+							<div class="para">
+								<p>해당 프로그램을 사용하여 백터 그래픽을 제작 및 편집합니다.</p>
+								<p>이미지를 백터로 변환하여 svg로 내보내 웹에 활용이 가능합니다.</p>
+								<p>Pen, Brush, Shape tool을 사용하여 여러가지 그래픽 요소를 제작하고 디자인합니다.</p>
+								<p>서체 편집과 효과를 적용하여 타이포그래피 디자인 및 간단한 로고를 제작합니다.</p>
+								<p>Text를 도형화시켜 변형시키는 디자인을 만들 수 있습니다.</p>
+								<p>Path를 수정 및 보완하여 곡선 및 직선을 자유롭게 표현합니다.</p>
+								<p>Layer와 Mask를 활용하여 그래픽 요소에 여러 효과를 적용합니다.</p>
+								<p>Mash, gradient등을 활용하여 그래픽 요소에 생동감을 더해줍니다.</p>
+							</div>
+							<div class="done">
+								닫기
+							</div>
+						
+						</div>
+
+					</div>
+
+				<h2>&#125;</h2>
+			</section>
+
+		</div>
+
+	</article>
+
+	
+	<!-- footer -->
+     <div class="footer-postion">&nbsp;</div>
+		<footer id="footer">
+			<div class="footer-inner">
+				<p>&copy;Seoyeon &middot; 2024</p>
+				<p>&nbsp;</p>
+				<p>Tab Size &#58; 4</p>
+				<p class="lang">HTML</p>
+				<p class="lang">HTML</p>
+				<p class="lang">CSS</p>
+				<p class="lang">JSON</p>
+			</div>
+		</footer>
+
 </div>
 
 
-<header id="header">
-	<div class="top-hd">
-		<div class="inner">
-			<h1><img src="images/icon/sublime-icon.png" alt="sublime portfolio"></h1>
-			<p>seoyeon - sublime text <span class="hd-point-size">&#40;PORTFOLIO&#41;</span></p>
-		</div>
-	</div>
-	<div class="tab-hd">
-		<ul>
-			<li>&nbsp;
-				<img src="images/icon/top-nav.svg" alt="">
-			</li>
-			<li>
-				<a href="index.html" data-top="0" class="main-tab">
-					<p>index.html</p>
-					<img src="images/icon/top-nav.svg" alt="" class='icon'>
-				</a>
-			</li>
-			<li>
-				<a href="#works" data-top="1" class="main-tab">
-					<p>works.html</p>
-					<img src="images/icon/top-nav.svg" alt="" class='icon'>
-				</a>
-			</li>
-			<li>
-				<a href="#design" data-top="2" class="main-tab">
-					<p>design.css</p>
-					<img src="images/icon/top-nav.svg" alt="" class='icon'>
-				</a>
-			</li>
-			<li>
-				<a href="#profile" data-top="3" class="main-tab">
-					<p>profile.json</p>
-					<img src="images/icon/top-nav.svg" alt="" class='icon'>
-				</a>
-			</li>
-		</ul>
-	</div>
-</header>
-
-<div class="position-area">&nbsp;</div>
-
-<article id="wrap">
-
-	<nav>
-		<ul class="sidebar">
-
-			<li class="side-para sp01">OPEN FILES</li>
-			<li class="side-para sp02">FOLDERS</li>
-			<li class="side-para sp03">
-				<img src="images/icon/folder.svg" alt="main-folder">
-				<p>Portfolio</p>
-			</li>
-
-			<li class="side01 main-side">
-				<a href="index.html" data-side="0">
-					<img src="images/icon/html5.svg" alt="main visual page">
-					<p>index.html</p>
-				</a>
-			</li>
-			<li class="side02 main-side">
-				<a href="#works" data-side="1">
-					<img src="images/icon/html5.svg" alt="publishing works page">
-					<p>works.html</p>
-				</a>
-			</li>
-			<li class="side03 main-side">
-				<a href="#design" data-side="2">
-					<img src="images/icon/css3.svg" alt="design works page">
-					<p>design.css</p>
-				</a>
-			</li>
-			<li class="side04 main-side">
-				<a href="#profile" data-side="3">
-					<img src="images/icon/json-icon.png" alt="profile page">
-					<p>profile.json</p>
-				</a>
-			</li>
-		
-		</ul>
-	</nav>
-
-
-	<div class="con-area">
-
-		<section id="visual" class="main-content">		
-			<div class="visual-inner">
-				<p>&lt;<span class="att">head</span>&gt;</p>
-				<p>&lt;<span class="att">title</span>&gt;</p>
-				<p class="writing"></p>
-				<p>&lt;&#47;<span class="att">title</span>&gt;</p>
-				<p>&lt;&#47;<span class="att">head</span>&gt;</p>
-			</div>
-		</section>
-
-		<!-- 타이핑 플러그인 -->
-		<script src="https://www.cssscript.com/demo/simple-typewriter-effect-pure-javascript-typewriterjs/typewriter.js"></script>
-		<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-
-		<script>
-			let typeW = document.querySelector('.writing');
-			let typewriter = new Typewriter(typeW, {
-				loop:false
-			});
-
-			typewriter
-				.pauseFor(2250)
-				.typeString("Hello,")
-				.pauseFor(400)
-				.typeString("Portfolio")
-				.start();
-		</script>
-
-		<section id="works" class="main-content">
-			<h2>
-				&lt;<span class='att'> article</span>
-				<span class='property'>id</span>&#61;
-				&ldquo;<span class='value'>works</span>&rdquo;
-				&gt;
-			</h2>
-
-			<p class="works-ex">
-				&lt;<span class='att'>p</span>&gt;<br>
-				<span class="blank-space">
-					퍼블리싱 작업물입니다&#33;
-				</span>
-				<span class="blank-space">
-					HTML, CSS, JavaScript를 활용하여 제작했습니다
-				</span>
-				&lt;&#47;<span class='att'>p</span>&gt;
-			</p>
-
-			<div class="card">
-
-				<div class="works-card c01">
-					<a href="sub-works.html" target="_blank">
-						<div class="con-card-img">
-							<img src="images/con-card/flower.jpg" alt="">
-						</div>
-						<div class="con-card-logo">
-							<img src="images/logo/flower-logo.png" alt="">
-						</div>
-						<div class="card-mouse-over">
-							<p class="explain-hd">
-								Full Site publishing
-							</p>
-							<p class="explain-para">
-								HTML, CSS, JavaScript
-							</p>
-						</div>
-					</a>
-				</div>
-
-				<div class="works-card c02">
-					<a href="sub-works.html" target="_blank">
-						<div class="con-card-img">
-							<img src="images/con-card/sparco.jpg" alt="">
-						</div>
-						<div class="con-card-logo">
-							<img src="images/logo/sparco-logo.svg" alt="">
-						</div>
-						<div class="card-mouse-over">
-							<p class="explain-hd">
-								Responsive Web
-							</p>
-							<p class="explain-para">
-								Media Query &amp; Swiper Carousel
-							</p>
-						</div>
-					</a>
-				</div>
-
-				<div class="works-card c03">
-					<a href="https://woogwayeon.github.io/sub_portfolio/sub-works-gog3.html" target="_blank">
-						<div class="con-card-img">
-							<img src="images/con-card/gog3.jpg" alt="">
-						</div>
-						<div class="con-card-logo">
-							<img src="images/logo/gog-logo.png" alt="">
-						</div>
-						<div class="card-mouse-over">
-							<p class="explain-hd">
-								Main &amp; Sub page publishing
-							</p>
-							<p class="explain-para">
-								youtube, spotify embeding
-							</p>
-						</div>
-					</a>
-				</div>
-
-				<div class="works-card c04">
-					<a href="sub-works.html" target="_blank">
-						<div class="con-card-img">
-							<img src="images/con-card/sony.jpg" alt="">
-						</div>
-						<div class="con-card-logo">
-							<img src="images/logo/sony-logo.png" alt="">
-						</div>
-						<div class="card-mouse-over">
-							<p class="explain-hd">
-								Shopping-cart
-							</p>
-							<p class="explain-para">
-								table TAG practical useing
-							</p>
-						</div>
-					</a>
-				</div>
-
-				<div class="works-card c05">
-					<a href="sub-works.html" target="_blank">
-						<div class="con-card-img">
-							<img src="images/con-card/responsive.jpg" alt="">
-						</div>
-						<div class="con-card-logo">
-							<p>Responsive Web</p>
-						</div>
-						<div class="card-mouse-over">
-							<p class="explain-hd">
-								Responsive Web
-							</p>
-							<p class="explain-para">
-								Media Query &amp; CSS transition
-							</p>
-						</div>
-					</a>
-				</div>
-
-				<div class="works-card continue">
-					<div class="continue-text">
-						<p>o&#40;&#42;&#94;&#64;&#94;&#42;&#41;o</p>
-						<p class="s">To Be Continue</p>
-					</div>
-				</div>
-			</div>
-
-			<h2>&lt;&#47;<span class="att">article</span>&gt;</h2>
-		</section>
-
-		<!-- 카드 animation -->
-		<script>
-			let observer = new IntersectionObserver((e)=>{
-				e.forEach((e)=>{
-					if(e.isIntersecting){
-						e.target.style.opacity= 1;
-					}else{
-						e.target.style.opacity= 0;
-					}
-				})
-			})
-
-			let card = document.querySelectorAll('.works-card')
-			let worksEx = document.querySelector('.works-ex')
-
-			observer.observe(worksEx)
-			for(i=0; i<6; i++){
-				observer.observe(card[i])
-			}
-
-
-		</script>
-
-		<!-- 카드 설명 올라오는 박스 script -->
-		<script>
-			const worksCard = document.querySelectorAll('.works-card');
-			const cardOver = document.querySelectorAll('.card-mouse-over');
-			const items = [1, 2, 3, 4, 5];
-
-			cardOver.forEach(n=>{n.style.bottom='-200px'});
-
-			for(let i = 0; i < items.length; i++) {
-    			
-    			console.log(items[i]);
-
-				worksCard[i].addEventListener('mouseover', function(){
-					cardOver[i].style.bottom=0
-				});
-				worksCard[i].addEventListener('mouseout', function(){
-					cardOver[i].style.bottom='-200px'
-				});
-			}
-		</script>
-
-		<section id="design" class="main-content">
-			<h2>
-				<span class='css-id'>&#35;design</span>
-				&#123; <!-- { -->
-				<span class='property'>display</span>
-				&#58; <!-- : -->
-				<span class='value'>block</span>
-				&#125; <!-- } -->
-			</h2>
-
-			<p class="design-ex">
-				&#47;&#42;
-				<span class="blank-space">
-				개인 디자인 작업물입니다&#33;
-				</span>
-				<span class="blank-space">
-				Figma, Photoshop, illustrator 등의 디자인 툴을 이용했습니다
-				</span>
-				&#42;&#47;
-			</p>
-			
-			<div class="card">
-
-				<div class="design-card d01">
-					<a href="https://woogwayeon.github.io/sub_portfolio/sub-design-jellycat.html" target="_blank">
-						<div class="con-card-img">
-							<img src="images/con-card/jellycat.jpg" alt="">
-						</div>
-						<div class="con-card-logo">
-							<img src="images/logo/jelly-logo.png" alt="">
-						</div>
-						<div class="design-mouse-over">
-							<p class="explain-hd">
-								Mobile design
-							</p>
-							<p class="explain-para">
-								Main &amp; Sub page design, Figma
-							</p>
-						</div>
-					</a>
-				</div>
-
-				<div class="design-card d02">
-					<a href="https://woogwayeon.github.io/sub_portfolio/sub-design-uniqlo.html" target="_blank">
-						<div class="con-card-img">
-							<img src="images/con-card/uniqlo.jpg" alt="">
-						</div>
-						<div class="con-card-logo">
-							<img src="images/logo/uni-logo.png" alt="">
-						</div>
-						<div class="design-mouse-over">
-							<p class="explain-hd">
-								Website Redesign
-							</p>
-							<p class="explain-para">
-								Main &#43; Select page design, Photoshop
-							</p>
-						</div>
-					</a>
-				</div>
-
-				<div class="design-card d03">
-					<a href="https://woogwayeon.github.io/sub_portfolio/sub-design-starcraft2.html" target="_blank">
-						<div class="con-card-img">
-							<img src="images/con-card/star2.jpg" alt="">
-						</div>
-						<div class="con-card-logo">
-							<img src="images/logo/star2-logo.png" alt="">
-						</div>
-						<div class="design-mouse-over">
-							<p class="explain-hd">
-								Module Grid
-							</p>
-							<p class="explain-para">
-								Website Mainpage Redesign, Photoshop
-							</p>
-						</div>
-					</a>
-				</div>
-
-				<div class="design-card d04">
-					<a href="https://woogwayeon.github.io/sub_portfolio/sub-design-DECCA.html" target="_blank">
-						<div class="con-card-img">
-							<img src="images/con-card/decca.jpg" alt="">
-						</div>
-						<div class="con-card-logo">
-							<img src="images/logo/decca-logo.svg" alt="">
-						</div>
-						<div class="design-mouse-over">
-							<p class="explain-hd">
-								Column Grid
-							</p>
-							<p class="explain-para">
-								Website Mainpage Redesign, Photoshop
-							</p>
-						</div>
-					</a>
-				</div>
-
-				<div class="design-card d05">
-					<a href="https://woogwayeon.github.io/sub_portfolio/sub-design-bazaar.html" target="_blank">
-						<div class="con-card-img">
-							<img src="images/con-card/bazaar.jpg" alt="">
-						</div>
-						<div class="con-card-logo">
-							<img src="images/logo/bazaar-logo.svg" alt="">
-						</div>
-						<div class="design-mouse-over">
-							<p class="explain-hd">
-								Website main
-							</p>
-							<p class="explain-para">
-								Website Mainpage Redesign, Photoshop
-							</p>
-						</div>
-					</a>
-				</div>
-
-				<div class="design-card d06">
-					<a href="sub-works.html" target="_blank">
-						<div class="con-card-img">
-							<img src="images/con-card/poster.jpg" alt="">
-						</div>
-						<div class="con-card-logo">
-							<p>Poster &amp; Typo</p>
-						</div>
-						<div class="design-mouse-over">
-							<p class="explain-hd">
-								Typography
-							</p>
-							<p class="explain-para">
-								Tradition Poster, Using Design tool
-							</p>
-						</div>
-					</a>
-				</div>
-			</div>
-
-			<h2 class="preset">
-				<span class='css-id'>&#35;preset</span>
-				&#123; <!-- { -->
-				<span class='property'>portfilo</span>
-				&#58; <!-- : -->
-				<span class='value'>sublime Text 4</span>
-				&#125; <!-- } -->
-			</h2>
-
-			<p class="design-ex de-sublime">
-				&#47;&#42;
-					<span class="blank-space heading">
-						포트폴리오 디자인을 <span class="port-em orange">sublime Text4</span> 스타일로 제작한 이유	
-					</span>
-				&#42;&#47;
-			</p>
-
-			<p class="design-ex de-sublime">
-				&#47;&#42;
-				<span class="blank-space">
-					<span class="port-em">서브라임</span>이란 단어는 라틴어 <span class="port-em">&#91;sublimis&#93;</span>에서 유래되었는데요,
-				</span>
-				<span class="blank-space">
-					<span class="port-em">limis</span>는 <span class="port-em">경계</span>를 뜻하고 <span class="port-em">Sub</span>라는 라틴어 접두사는 <span class="port-em">&lsquo;-를 넘어서&rsquo;</span>라는 의미라고 합니다.
-				</span>
-				<span class="blank-space">
-					웹 개발을 시작한 이후로 저는 늘 <span class="port-em">서브라임 에디터</span>와 함께 <span class="port-em">성장</span>해왔습니다.
-				</span>
-				<span class="blank-space">
-					제가 깊은 애정을 가진 이 텍스트 에디터와 함께 <span class="port-em">저의 한계를 넘어 전진하겠다는 마음</span>으로 포트폴리오를 디자인했습니다.	
-				</span>
-				<span class="blank-space">
-					또한 서브라임 텍스트의 <span class="port-em">자유롭고 직관적인 인터페이스</span>를 반응형으로 녹여내어, 저의 <span class="port-em">프로젝트와 작업 결과물을 효율적으로 전달</span>하고자 했습니다.
-				</span>
-				&#42;&#47;
-			</p>
-
-
-		</section>
-		<!-- 카드 animation -->
-		<script>
-			let observer2 = new IntersectionObserver((e)=>{
-				e.forEach((e)=>{
-					if(e.isIntersecting){
-						e.target.style.opacity= 1;
-					}else{
-						e.target.style.opacity= 0;
-					}
-				})
-			})
-
-			let d_card = document.querySelectorAll('.design-card')
-			let designEx = document.querySelector('.design-ex')
-			let presetH2 = document.querySelector('.preset')
-			let presetP = document.querySelectorAll('.de-sublime .blank-space')
-			let presetP2 = document.querySelectorAll('.de-sublime .port-em')
-			
-			observer2.observe(designEx)
-			observer2.observe(presetH2)
-			for(i=0; i<6; i++){
-				observer2.observe(d_card[i])
-				observer2.observe(presetP[i])
-			}
-
-			for(e=0; e<12; e++){
-				observer2.observe(presetP2[e])
-			}
-
-		</script>
-		<!-- design card explain -->
-		<script>
-			
-			const designCard = document.querySelectorAll('.design-card');
-			const designOver = document.querySelectorAll('.design-mouse-over');
-			const dItems = [1, 2, 3, 4, 5, 6];
-
-			designOver.forEach(n=>{n.style.bottom='-200px'});
-
-			for(let i = 0; i < dItems.length; i++) {
-    			
-    			console.log(items[i]);
-
-				designCard[i].addEventListener('mouseover', function(){
-					designOver[i].style.bottom=0
-				});
-				designCard[i].addEventListener('mouseout', function(){
-					designOver[i].style.bottom='-200px'
-				});
-			}
-		</script>
-
-		<section id="profile" class="main-content">
-			<h2>&#123;</h2>
-
-				<div class="profile-inner">
-
-					<div class="about">
-						<div class="image">
-							<img src="images/face-cir.svg" alt="미모티콘 프로필">
-						</div>
-						<div class="info">
-							<h3>
-								<span class="att">&ldquo;Profile&rdquo;</span> 
-								<span class="json-mark">&#58;&#91;</span>
-							</h3>
-							<h3><span class="json-mark">&#123;</span></h3>
-							<p><span class="value">Name</span> &nbsp;&#58;&nbsp; 고은아 <span class="json-mark-s">, </span></p>
-							<p><span class="value">Phone</span> &nbsp;&#58;&nbsp; 010 - 5244 - 0835 <span class="json-mark-s">, </span></p>
-							<p>
-								<span class="value">E-mail</span>
-								&nbsp;&#58;&nbsp;
-								<a href="mailto:woogwayeon@icloud.com" class="link-underline">
-								woogwayeon&#64;icloud.com
-								</a>
-								<span class="json-mark-s">, </span>
-							</p>
-							<p><span class="value">Birth</span> &nbsp;&#58;&nbsp; 1999. 08. 05 <span class="json-mark-s">, </span></p>
-							<p><span class="value">Address</span> &nbsp;&#58;&nbsp; 서울 강북구 <span class="json-mark-s">, </span></p>
-							<p><span class="value">License</span> &nbsp;&#58;&nbsp; 웹디자인기능사, GTQ / GTQi 1급 <span class="json-mark-s">, </span></p>
-							<p>
-								<span class="value">Portfolio</span> &nbsp;&#58;&nbsp; 
-								<a href="https://woogwayeon.github.io/sublime_portfolio/" class="link-underline">woogwayeon.github.io/sublime_portfolio</a><span class="json-mark-s"> , </span>
-							</p>
-							<p>
-								<span class="value">PDF</span> &nbsp;&#58;&nbsp; 
-								<a href="http://naver.me/IDo41aAF" class="link-underline link-cloud" target="_blank">포트폴리오.pdf</a> 
-							</p>
-							<p class="h-ex">Naver Mybox로 연결됩니다</p>
-							<h3><span class="json-mark">&#125;</span></h3>
-							<h3><span class="json-mark">&#93;</span></h3>
-						</div>
-					</div>
-
-					<script>
-						const cloud = document.querySelector('.link-cloud');
-						const cloudLink = document.querySelector('.h-ex');
-
-						console.log(cloudLink)
-
-						cloud.addEventListener('mouseover',()=>{
-						cloudLink.style.opacity=1
-						})
-						cloud.addEventListener('mouseleave',()=>{
-						cloudLink.style.opacity=0
-						})
-					</script>	
-
-					<div class="ability">
-						<div class="ability-para">
-							<h3>
-								<span class="att">&ldquo;Ability&rdquo;</span> 
-								<span class="json-mark">&#58;&#91;&nbsp;</span>
-							</h3>
-							<p>	
-								<span class="json-mark-s">&nbsp;&nbsp;&#123;&nbsp;</span>
-								<span class="value">&nbsp;Tip&nbsp;</span>
-								&nbsp;&#58;&nbsp; 
-								카드를 클릭하면 기술에 대한 제 수준을 보다 자세히 확인하실 수 있어요&#33;
-								<span class="json-mark-s">&nbsp;&#125;&nbsp;</span>
-							</p>
-						</div>
-
-						<div class="ability-card-wrap">
-							<div class="a-card">
-								<div class="a-img">
-									<img src="images/icon/html5.svg" alt="html5">
-								</div>
-								<div class="a-heading">
-									<p>HTML5</p>
-								</div>
-							</div>
-							<div class="a-card">
-								<div class="a-img">
-									<img src="images/icon/css3.svg" alt="css3">
-								</div>
-								<div class="a-heading">
-									<p>CSS3</p>
-								</div>
-							</div>
-							<div class="a-card">
-								<div class="a-img">
-									<img src="images/icon/js-icon.svg" alt="JavaScript ES6">
-								</div>
-								<div class="a-heading">
-									<p>JavaScript</p>
-								</div>
-							</div>
-							<div class="a-card">
-								<div class="a-img">
-									<img src="images/icon/figma-icon.svg" alt="Figma" class="figma-icon">
-								</div>
-								<div class="a-heading">
-									<p>Figma</p>
-								</div>
-							</div>
-							<div class="a-card">
-								<div class="a-img">
-									<img src="images/icon/psd-icon.svg" alt="Photoshop">
-								</div>
-								<div class="a-heading">
-									<p>Photoshop</p>
-								</div>
-							</div>
-							<div class="a-card">
-								<div class="a-img">
-									<img src="images/icon/ai-icon.svg" alt="illustrator">
-								</div>
-								<div class="a-heading">
-									<p>illustrator</p>
-								</div>
-							</div>
-						</div>
-
-						<h3><span class="json-mark">&nbsp;&nbsp;&nbsp;&#93;</span></h3>
-					</div>
-
-					<div class="character">
-						<div class="chracter-para">
-							<h3>
-								<span class="att">&ldquo;Character&rdquo;</span> 
-								<span class="json-mark">&#58;&nbsp;&ldquo;&nbsp;</span>
-							</h3>
-							<!--<p>
-								저는 <span class="c-em">기록</span> <span class="material-symbols-rounded orange">edit_calendar</span> 을 좋아하고, <span class="c-em">신뢰</span> <span class="material-symbols-rounded red">volunteer_activism</span> 를 중요하게 생각하는 사람이에요.<br>
-								<span class="c-em">데드라인 엄수</span>를 위해 <span class="c-em">꼼꼼한 계획</span> <span class="material-symbols-rounded yellow">done_outline</span> 과 <span class="c-em">시간 관리</span> <span class="material-symbols-rounded blue">alarm_on</span> 에 항상 힘쓰고 있어요.<br>
-								무서운 일이 생기면 겁나지 않을 때 까지 부딛쳐 해결하는 <span class="c-em">도전 정신</span> <span class="material-symbols-rounded pink">sports_kabaddi</span> <span class="c-em">&#33;</span> <br>
-								&rarr; <span class="c-em">긍정 파워가 넘쳐요</span> <span class="material-symbols-rounded yellow">person_play</span><br>
-								사람들과 조화로운 관계를 추구하기에, 그룹 안에서는 모두와 <span class="c-em">협심</span> <span class="material-symbols-rounded green">psychiatry</span> 하여 <span class="c-em">팀이 얻을 수 있는 최상의 목표를 성취</span>하려 노력해요.
-							</p> -->
-
-							<p>
-								<span class="material-symbols-rounded red">volunteer_activism</span>&nbsp;&nbsp;&nbsp;저는 <span class="c-em">기록</span>을 좋아하고, <span class="c-em">신뢰</span>를 중요하게 생각하는 사람이에요.<br>
-								<span class="material-symbols-rounded blue">alarm_on</span>&nbsp;&nbsp;&nbsp;<span class="c-em">데드라인 엄수</span>를 위해 <span class="c-em">꼼꼼한 계획</span>과 <span class="c-em">시간 관리</span>에 항상 힘쓰고 있어요.<br>
-								<span class="material-symbols-rounded pink">sports_kabaddi</span>&nbsp;&nbsp;&nbsp;무서운 일이 생기면 겁나지 않을 때 까지 부딛쳐 해결하는 <span class="c-em">도전 정신 &#33;</span> <br>
-								<span class="material-symbols-rounded yellow">person_play</span>&nbsp;&nbsp;&nbsp;<span class="c-em">긍정 파워</span>가 넘쳐요.<br>
-								<span class="material-symbols-rounded green">psychiatry</span>&nbsp;&nbsp;&nbsp;사람들과 <span class="c-em">조화로운 관계</span>를 추구하기에, 그룹 안에서는 모두와 <span class="c-em">협심</span>하여 <span class="c-em">팀이 얻을 수 있는 최상의 목표를 성취</span>하려 노력해요.
-							</p>
-							<h3><span class="json-mark">&rdquo;</span></h3>
-						</div>
-
-					</div>
-
-					<!-- HTML Ability -->
-					<div class="doit">
-						
-						<div class="heading">
-							<img src="images/icon/dev-icon.svg" alt="develog modal icon">
-							<p><span class="m-html">HTML</span>을 이용해서 이런 일을 할 수 있어요</p>
-						</div>
-						<div class="para">
-							<p>Basic HTML Tag를 사용하여 <span class="m-para-em">Web, Mobile markup</span></p>
-							<p>HTML tag에 <span class="m-para-em">CSS &#47; JS mouse event 연계</span>하여 웹 및 모바일 페이지 동작 구현 </p>
-							<p>&lt;ul&gt;, &lt;li&gt; Tag 목록 정렬 및 웹 페이지 구조 응용 활용</p>
-							<p>&lt;table&gt; Tag 활용하여 게시판 및 장바구니 페이지 제작</p>
-							<p>&lt;iframe&gt; 연결을 통해 외부 소스를 홈페이지 내로 임베드 <span class="annotation">&lt; &#33;-- 유투브, 스포티파이 등 -- &gt;</span></p>
-							<p>Web fonts 및 web icon 삽입</p>
-							<p>선택자를 이용하여 <span class="m-para-em">웹 접근성</span> 구현 <span class="annotation">&lt; &#33;-- skip navigation, blind 처리 등 -- &gt;</span></p>
-							<p>Semantic Tag 사용으로 코드 가독성 및 효율성 증가</p>
-							<p>&lt;img&gt;, &lt;map name=&ldquo; &rdquo;&gt;, &lt;area&gt; Tag 이용하여 이미지맵 제작</p>
-							<p>&lt;fieldset&gt;, &lt;legend&gt;, &lt;form&gt;, &lt;label&gt; 사용하여 <span class="m-para-em">Login, out 및 submit 폼 제작</span> 가능</p>
-						</div>
-						<div class="done">
-							닫기
-						</div>
-					
-					</div>
-
-					<!-- CSS Ability -->
-					<div class="doit">
-						
-						<div class="heading">
-							<img src="images/icon/dev-icon.svg" alt="develog modal icon">
-							<p><span class="att">CSS</span>를 이용해서 이런 일을 할 수 있어요</p>
-						</div>
-						<div class="para">
-							<p>Basic HTML Tag를 사용하여 <span class="m-para-em">Web, Mobile markup</span></p>
-							<p>HTML tag에 <span class="m-para-em">CSS &#47; JS mouse event 연계</span>하여 웹 및 모바일 페이지 동작 구현 </p>
-							<p>&lt;ul&gt;, &lt;li&gt; Tag 목록 정렬 및 웹 페이지 구조 응용 활용</p>
-							<p>&lt;table&gt; Tag 활용하여 게시판 및 장바구니 페이지 제작</p>
-							<p>&lt;iframe&gt; 연결을 통해 외부 소스를 홈페이지 내로 임베드 <span class="annotation">&lt; &#33;-- 유투브, 스포티파이 등 -- &gt;</span></p>
-							<p>Web fonts 및 web icon 삽입</p>
-							<p>선택자를 이용하여 <span class="m-para-em">웹 접근성</span> 구현 <span class="annotation">&lt; &#33;-- skip navigation, blind 처리 등 -- &gt;</span></p>
-							<p>Semantic Tag 사용으로 코드 가독성 및 효율성 증가</p>
-							<p>&lt;img&gt;, &lt;map name=&ldquo; &rdquo;&gt;, &lt;area&gt; Tag 이용하여 이미지맵 제작</p>
-							<p>&lt;fieldset&gt;, &lt;legend&gt;, &lt;form&gt;, &lt;label&gt; 사용하여 <span class="m-para-em">Login, out 및 submit 폼 제작</span> 가능</p>
-						</div>
-						<div class="done">
-							닫기
-						</div>
-					
-					</div>
-
-					<!-- JavaScript Ability -->
-					<div class="doit">
-						
-						<div class="heading">
-							<img src="images/icon/dev-icon.svg" alt="develog modal icon">
-							<p><span class="m-js">JavaScript</span>를 이용해서 이런 일을 할 수 있어요</p>
-						</div>
-						<div class="para">
-							<p>Basic HTML Tag를 사용하여 <span class="m-para-em">Web, Mobile markup</span></p>
-							<p>HTML tag에 <span class="m-para-em">CSS &#47; JS mouse event 연계</span>하여 웹 및 모바일 페이지 동작 구현 </p>
-							<p>&lt;ul&gt;, &lt;li&gt; Tag 목록 정렬 및 웹 페이지 구조 응용 활용</p>
-							<p>&lt;table&gt; Tag 활용하여 게시판 및 장바구니 페이지 제작</p>
-							<p>&lt;iframe&gt; 연결을 통해 외부 소스를 홈페이지 내로 임베드 <span class="annotation">&lt; &#33;-- 유투브, 스포티파이 등 -- &gt;</span></p>
-							<p>Web fonts 및 web icon 삽입</p>
-							<p>선택자를 이용하여 <span class="m-para-em">웹 접근성</span> 구현 <span class="annotation">&lt; &#33;-- skip navigation, blind 처리 등 -- &gt;</span></p>
-							<p>Semantic Tag 사용으로 코드 가독성 및 효율성 증가</p>
-							<p>&lt;img&gt;, &lt;map name=&ldquo; &rdquo;&gt;, &lt;area&gt; Tag 이용하여 이미지맵 제작</p>
-							<p>&lt;fieldset&gt;, &lt;legend&gt;, &lt;form&gt;, &lt;label&gt; 사용하여 <span class="m-para-em">Login, out 및 submit 폼 제작</span> 가능</p>
-						</div>
-						<div class="done">
-							닫기
-						</div>
-					
-					</div>
-
-					<!-- Figma Ability -->
-					<div class="doit">
-						
-						<div class="heading">
-							<img src="images/icon/pentool-icon.svg" alt="develog modal icon">
-							<p><span class="m-figma">Figma</span>의 이런 기능을 활용할 수 있어요</p>
-						</div>
-						<div class="para">
-							<p>Basic HTML Tag를 사용하여 <span class="m-para-em">Web, Mobile markup</span></p>
-							<p>HTML tag에 <span class="m-para-em">CSS &#47; JS mouse event 연계</span>하여 웹 및 모바일 페이지 동작 구현 </p>
-							<p>&lt;ul&gt;, &lt;li&gt; Tag 목록 정렬 및 웹 페이지 구조 응용 활용</p>
-							<p>&lt;table&gt; Tag 활용하여 게시판 및 장바구니 페이지 제작</p>
-							<p>&lt;iframe&gt; 연결을 통해 외부 소스를 홈페이지 내로 임베드 <span class="annotation">&lt; &#33;-- 유투브, 스포티파이 등 -- &gt;</span></p>
-							<p>Web fonts 및 web icon 삽입</p>
-							<p>선택자를 이용하여 <span class="m-para-em">웹 접근성</span> 구현 <span class="annotation">&lt; &#33;-- skip navigation, blind 처리 등 -- &gt;</span></p>
-							<p>Semantic Tag 사용으로 코드 가독성 및 효율성 증가</p>
-							<p>&lt;img&gt;, &lt;map name=&ldquo; &rdquo;&gt;, &lt;area&gt; Tag 이용하여 이미지맵 제작</p>
-							<p>&lt;fieldset&gt;, &lt;legend&gt;, &lt;form&gt;, &lt;label&gt; 사용하여 <span class="m-para-em">Login, out 및 submit 폼 제작</span> 가능</p>
-						</div>
-						<div class="done">
-							닫기
-						</div>
-					
-					</div>
-
-					<!-- Photoshop Ability -->
-					<div class="doit">
-						
-						<div class="heading">
-							<img src="images/icon/pentool-icon.svg" alt="develog modal icon">
-							<p><span class="m-psd">Photoshop</span>의 이런 기능을 활용할 수 있어요</p>
-						</div>
-						<div class="para">
-							<p>Basic HTML Tag를 사용하여 <span class="m-para-em">Web, Mobile markup</span></p>
-							<p>HTML tag에 <span class="m-para-em">CSS &#47; JS mouse event 연계</span>하여 웹 및 모바일 페이지 동작 구현 </p>
-							<p>&lt;ul&gt;, &lt;li&gt; Tag 목록 정렬 및 웹 페이지 구조 응용 활용</p>
-							<p>&lt;table&gt; Tag 활용하여 게시판 및 장바구니 페이지 제작</p>
-							<p>&lt;iframe&gt; 연결을 통해 외부 소스를 홈페이지 내로 임베드 <span class="annotation">&lt; &#33;-- 유투브, 스포티파이 등 -- &gt;</span></p>
-							<p>Web fonts 및 web icon 삽입</p>
-							<p>선택자를 이용하여 <span class="m-para-em">웹 접근성</span> 구현 <span class="annotation">&lt; &#33;-- skip navigation, blind 처리 등 -- &gt;</span></p>
-							<p>Semantic Tag 사용으로 코드 가독성 및 효율성 증가</p>
-							<p>&lt;img&gt;, &lt;map name=&ldquo; &rdquo;&gt;, &lt;area&gt; Tag 이용하여 이미지맵 제작</p>
-							<p>&lt;fieldset&gt;, &lt;legend&gt;, &lt;form&gt;, &lt;label&gt; 사용하여 <span class="m-para-em">Login, out 및 submit 폼 제작</span> 가능</p>
-						</div>
-						<div class="done">
-							닫기
-						</div>
-					
-					</div>
-
-					<!-- illustrator Ability -->
-					<div class="doit">
-						
-						<div class="heading">
-							<img src="images/icon/pentool-icon.svg" alt="develog modal icon">
-							<p><span class="css-id">illustrator</span>의 이런 기능을 활용할 수 있어요</p>
-						</div>
-						<div class="para">
-							<p>Basic HTML Tag를 사용하여 <span class="m-para-em">Web, Mobile markup</span></p>
-							<p>HTML tag에 <span class="m-para-em">CSS &#47; JS mouse event 연계</span>하여 웹 및 모바일 페이지 동작 구현 </p>
-							<p>&lt;ul&gt;, &lt;li&gt; Tag 목록 정렬 및 웹 페이지 구조 응용 활용</p>
-							<p>&lt;table&gt; Tag 활용하여 게시판 및 장바구니 페이지 제작</p>
-							<p>&lt;iframe&gt; 연결을 통해 외부 소스를 홈페이지 내로 임베드 <span class="annotation">&lt; &#33;-- 유투브, 스포티파이 등 -- &gt;</span></p>
-							<p>Web fonts 및 web icon 삽입</p>
-							<p>선택자를 이용하여 <span class="m-para-em">웹 접근성</span> 구현 <span class="annotation">&lt; &#33;-- skip navigation, blind 처리 등 -- &gt;</span></p>
-							<p>Semantic Tag 사용으로 코드 가독성 및 효율성 증가</p>
-							<p>&lt;img&gt;, &lt;map name=&ldquo; &rdquo;&gt;, &lt;area&gt; Tag 이용하여 이미지맵 제작</p>
-							<p>&lt;fieldset&gt;, &lt;legend&gt;, &lt;form&gt;, &lt;label&gt; 사용하여 <span class="m-para-em">Login, out 및 submit 폼 제작</span> 가능</p>
-						</div>
-						<div class="done">
-							닫기
-						</div>
-					
-					</div>
-
-				</div>
-
-			<h2>&#125;</h2>
-		</section>
-		
-		<script>
-			let observer3 = new IntersectionObserver((e)=>{
-				e.forEach((e)=>{
-					if(e.isIntersecting){
-						e.target.style.opacity= 1;
-					}else{
-						e.target.style.opacity= 0;
-					}
-				})
-			})
-
-			let p_about = document.querySelector('.about')
-			let p_ability = document.querySelector('.ability')
-			let p_character = document.querySelector('.character')
-
-			
-			observer3.observe(p_about);
-			observer3.observe(p_ability);
-			observer3.observe(p_character);
-
-
-		</script>
-
-		<!-- ability card modal -->
-		<script>
-			
-			const attCard = document.querySelectorAll('.a-card');
-			const attModal = document.querySelectorAll('.doit');
-			const mClose = document.querySelectorAll('.doit');
-			const mNums = [ 1, 2, 3, 4, 5, 6 ];
-			
-			attModal.forEach((e)=>{e.style.display='none'});
-
-			for(let n=0; n < mNums.length; n++){
-
-				attCard[n].addEventListener('click', ()=>{
-					attModal[n].style.display='block';
-					attModal[n].style.opacity='1';
-				})
-
-				mClose[n].addEventListener('click',()=>{
-					attModal[n].style.display='none';
-
-				})
-	
-			}
-		</script>
-
-	</div>
-
-</article>
-
-<div class="footer-postion">&nbsp;</div>
-
-<footer id="footer">
-	<div class="footer-inner">
-		<p>&copy;Seoyeon &middot; 2024</p>
-		<p>&nbsp;</p>
-		<p>Tab Size &#58; 4</p>
-		<p class="lang">HTML</p>
-		<p class="lang">HTML</p>
-		<p class="lang">CSS</p>
-		<p class="lang">JSON</p>
-	</div>
-</footer>
-
+<!-- JS -->
+<!-- 전체 탭메뉴 제어 -->
 <script src="js/main-tab.js"></script>
+
+<!-- 스크롤 및 카드 모션 제어 -->
+<script src="js/scroll.js"></script>
 
 </body>
 </html>
