@@ -98,19 +98,34 @@ for(let i = 0; i < dItems.length; i++) {
 
 //Footer
 
-//네이버 마이박스 연결 안내하는 함수
+//모바일사이즈 마이박스 모달창을 모바일에서 안보이게 하는 함수
 
 const cloud = document.querySelector('.link-cloud');
 const cloudLink = document.querySelector('.h-ex');
 
+window.addEventListener("resize",function(){
+	if( window.innerWidth > (768+17) ) { 
+		cloud.addEventListener('mouseover',()=>{
+			cloudLink.style.display="none"
+		})
+	}else{ 
+		cloud.addEventListener('mouseover',()=>{
+			cloudLink.style.display="block"
+		})
+	}
+})
+
+//네이버 마이박스 연결 안내하는 함수
+
 console.log(cloudLink)
 
 cloud.addEventListener('mouseover',()=>{
-cloudLink.style.opacity=1
+	cloudLink.style.opacity=1
 })
 cloud.addEventListener('mouseleave',()=>{
-cloudLink.style.opacity=0
+	cloudLink.style.opacity=0
 })
+
 
 // footer 스크롤을 제어하는 함수
 
