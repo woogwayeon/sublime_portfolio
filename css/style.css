@@ -1,3 +1,14 @@
+/* Fonts */
+
+/* Google Fonts : IBM Plex Mono */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Google Fonts : Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* Google Fonts : Noto Sans KR */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
 /* CSS Reset */
 @charset utf8;
 html{ height: 100%; }
@@ -111,7 +122,7 @@ h1 img{
 
 
 /* main article */
-#wrap{ display: flex; }
+#conatiner{ display: flex; }
 
 .position-area{ height: 74px; width: 100%; }
 .footer-postion{ height: 40px; width: 100%; }
@@ -388,6 +399,7 @@ h2{ font: bold 40px 'IBM Plex Mono'; color: #fff;  }
 	transition: 1.7s;
 	padding-right: 30px;
 }
+
 
 .design-card{ 
 	position: relative;
@@ -677,8 +689,4 @@ h2{ font: bold 40px 'IBM Plex Mono'; color: #fff;  }
 .footer-inner p:nth-child(2) { width: 70%; }
 .footer-inner p:nth-child(3) { width: 120px; text-align: right; padding-right: 10px; }
 .footer-inner p:nth-child(4) { width: 10%; text-align: right; }
-
-
-
-
 
