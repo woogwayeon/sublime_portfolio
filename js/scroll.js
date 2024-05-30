@@ -137,7 +137,7 @@ observer3.observe(p_character);
 	
 const attCard = document.querySelectorAll('.a-card');
 const attModal = document.querySelectorAll('.doit');
-const mClose = document.querySelectorAll('.doit');
+const mClose = document.querySelectorAll('.done');
 const mNums = [ 1, 2, 3, 4, 5, 6 ];
 
 attModal.forEach((e)=>{e.style.display='none'});
