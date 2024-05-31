@@ -20,12 +20,19 @@
 </head>
 <body>
 
+<div class="skip_navigation">
+	<a href="#visual" class="skip">메인페이지 바로가기</a>
+	<a href="#works" class="skip">코딩 작업물 바로보기</a>
+	<a href="#design" class="skip">디자인 작업물 바로보기</a>
+	<a href="#profile" class="skip">프로필 페이지 바로가기</a>
+</div>
+
 <div id="wrap">
 
  <!-- 로딩 페이지 -->
 	<div class="loading">
 		<div>
-			<img src="images/icon/loading.svg" alt="">
+			<img src="images/icon/loading.svg" alt="로딩중입니다">
 		</div>
 		<div>Loading</div>
 		<div>
@@ -38,7 +45,7 @@
 	   <!-- 최상단 헤더 서브라임 로고 및 ~ -->
 		<div class="top-hd">
 			<div class="inner">
-				<h1><img src="images/icon/sublime-icon.png" alt="sublime portfolio"></h1>
+				<h1><img src="images/icon/sublime-icon.png" alt="서연의 sublime portfolio입니다"></h1>
 				<p>seoyeon - sublime text <span class="hd-point-size">&#40;PORTFOLIO&#41;</span></p>
 			</div>
 		</div>
@@ -46,31 +53,33 @@
 	   <!-- 헤더 탭메뉴 -->
 		<div class="tab-hd">
 			<ul>
-				<li>&nbsp;
-					<img src="images/icon/top-nav.svg" alt="">
-				</li>
+				<li>&nbsp;</li>
 				<li>
 					<a href="index.html" data-top="0" class="main-tab">
 						<p>index.html</p>
-						<img src="images/icon/top-nav.svg" alt="" class='icon'>
+						<img src="images/icon/top-nav.svg" alt="index.html Tab toggle" class='icon'>
+						<span class="blind">메인페이지</span>
 					</a>
 				</li>
 				<li>
 					<a href="#works" data-top="1" class="main-tab">
 						<p>works.html</p>
-						<img src="images/icon/top-nav.svg" alt="" class='icon'>
+						<img src="images/icon/top-nav.svg" alt="works.html Tab toggle" class='icon'>
+						<span class="blind">코딩 작업물</span>
 					</a>
 				</li>
 				<li>
 					<a href="#design" data-top="2" class="main-tab">
 						<p>design.css</p>
-						<img src="images/icon/top-nav.svg" alt="" class='icon'>
+						<img src="images/icon/top-nav.svg" alt="design.css Tab toggle" class='icon'>
+						<span class="blind">디자인 작업물</span>
 					</a>
 				</li>
 				<li>
 					<a href="#profile" data-top="3" class="main-tab">
 						<p>profile.json</p>
-						<img src="images/icon/top-nav.svg" alt="" class='icon'>
+						<img src="images/icon/top-nav.svg" alt="profile.json Tab toggle" class='icon'>
+						<span class="blind">프로필 및 개인정보</span>
 					</a>
 				</li>
 			</ul>
@@ -85,7 +94,7 @@
 	   	<!-- 사이드바 메뉴 -->
 		<nav>
 			<ul class="sidebar">
-
+				<span class="blind">사이드바</span>
 				<li class="side-para sp01">OPEN FILES</li>
 				<li class="side-para sp02">FOLDERS</li>
 				<li class="side-para sp03">
@@ -97,24 +106,28 @@
 					<a href="index.html" data-side="0">
 						<img src="images/icon/html5.svg" alt="main visual page">
 						<p>index.html</p>
+						<span class="blind">메인페이지</span>
 					</a>
 				</li>
 				<li class="side02 main-side">
 					<a href="#works" data-side="1">
 						<img src="images/icon/html5.svg" alt="publishing works page">
 						<p>works.html</p>
+						<span class="blind">코딩 및 퍼블리싱 작업물</span>
 					</a>
 				</li>
 				<li class="side03 main-side">
 					<a href="#design" data-side="2">
 						<img src="images/icon/css3.svg" alt="design works page">
 						<p>design.css</p>
+						<span class="blind">디자인 작업물</span>
 					</a>
 				</li>
 				<li class="side04 main-side">
 					<a href="#profile" data-side="3">
 						<img src="images/icon/json-icon.png" alt="profile page">
 						<p>profile.json</p>
+						<span class="blind">프로필 및 개인정보</span>
 					</a>
 				</li>
 			
@@ -129,7 +142,7 @@
 				<div class="visual-inner">
 					<p>&lt;<span class="att">head</span>&gt;</p>
 					<p>&lt;<span class="att">title</span>&gt;</p>
-					<p class="writing"></p>
+					<p class="writing"><span class="blind">hello, portfolio</span></p>
 					<p>&lt;&#47;<span class="att">title</span>&gt;</p>
 					<p>&lt;&#47;<span class="att">head</span>&gt;</p>
 				</div>
@@ -179,10 +192,10 @@
 					<div class="works-card c01">
 						<a href="sub-works.html" target="_blank">
 							<div class="con-card-img">
-								<img src="images/con-card/flower.jpg" alt="">
+								<img src="images/con-card/flower.jpg" alt="화담숲 전경 섬네일이미지입니다">
 							</div>
 							<div class="con-card-logo">
-								<img src="images/logo/flower-logo.png" alt="">
+								<img src="images/logo/flower-logo.png" alt="화담숲 publishing">
 							</div>
 							<div class="card-mouse-over">
 								<p class="explain-hd">
@@ -191,6 +204,7 @@
 								<p class="explain-para">
 									HTML, CSS, JavaScript
 								</p>
+								<span class="blind">클릭 시 화담숲 퍼블리싱 작업물 상세페이지로 이동합니다</span>
 							</div>
 						</a>
 					</div>
@@ -198,10 +212,10 @@
 					<div class="works-card c02">
 						<a href="sub-works.html" target="_blank">
 							<div class="con-card-img">
-								<img src="images/con-card/sparco.jpg" alt="">
+								<img src="images/con-card/sparco.jpg" alt="스파르코 아이덴티티가 담긴 레이서 섬네일사진입니다">
 							</div>
 							<div class="con-card-logo">
-								<img src="images/logo/sparco-logo.svg" alt="">
+								<img src="images/logo/sparco-logo.svg" alt="sparco publishg">
 							</div>
 							<div class="card-mouse-over">
 								<p class="explain-hd">
@@ -210,6 +224,7 @@
 								<p class="explain-para">
 									Media Query &amp; Swiper Carousel
 								</p>
+								<span class="blind">클릭 시 스파르코 퍼블리싱 작업물 상세페이지로 이동합니다</span>
 							</div>
 						</a>
 					</div>
@@ -217,10 +232,10 @@
 					<div class="works-card c03">
 						<a href="https://woogwayeon.github.io/sub_portfolio/sub-works-gog3.html" target="_blank">
 							<div class="con-card-img">
-								<img src="images/con-card/gog3.jpg" alt="">
+								<img src="images/con-card/gog3.jpg" alt="가디언즈 오브 갤럭시 3의 메인 포스터 섬네일이미지입니다">
 							</div>
 							<div class="con-card-logo">
-								<img src="images/logo/gog-logo.png" alt="">
+								<img src="images/logo/gog-logo.png" alt="Guardians of thr galaxy publishing">
 							</div>
 							<div class="card-mouse-over">
 								<p class="explain-hd">
@@ -229,6 +244,7 @@
 								<p class="explain-para">
 									youtube, spotify embeding
 								</p>
+								<span class="blind">클릭 시 가디언즈 오브 갤럭시 3 퍼블리싱 작업물 상세페이지로 이동합니다</span>
 							</div>
 						</a>
 					</div>
@@ -236,10 +252,10 @@
 					<div class="works-card c04">
 						<a href="sub-works.html" target="_blank">
 							<div class="con-card-img">
-								<img src="images/con-card/sony.jpg" alt="">
+								<img src="images/con-card/sony.jpg" alt="sony 카메라로 촬영하는 모습의 섬네일이미지입니다">
 							</div>
 							<div class="con-card-logo">
-								<img src="images/logo/sony-logo.png" alt="">
+								<img src="images/logo/sony-logo.png" alt="sony shoppingcart publishing">
 							</div>
 							<div class="card-mouse-over">
 								<p class="explain-hd">
@@ -248,6 +264,7 @@
 								<p class="explain-para">
 									table TAG practical useing
 								</p>
+								<span class="blind">클릭 시 소니 장바구니 퍼블리싱 작업물 상세페이지로 이동합니다</span>
 							</div>
 						</a>
 					</div>
@@ -255,7 +272,7 @@
 					<div class="works-card c05">
 						<a href="sub-works.html" target="_blank">
 							<div class="con-card-img">
-								<img src="images/con-card/responsive.jpg" alt="">
+								<img src="images/con-card/responsive.jpg" alt="mobile기기의 모습이 그려진 섬네일이미지입니다">
 							</div>
 							<div class="con-card-logo">
 								<p>Responsive Web</p>
@@ -267,6 +284,7 @@
 								<p class="explain-para">
 									Media Query &amp; CSS transition
 								</p>
+								<span class="blind">클릭 시 반응형 웹페이지 퍼블리싱 작업물 상세페이지로 이동합니다</span>
 							</div>
 						</a>
 					</div>
@@ -309,10 +327,10 @@
 					<div class="design-card d01">
 						<a href="https://woogwayeon.github.io/sub_portfolio/sub-design-jellycat.html" target="_blank">
 							<div class="con-card-img">
-								<img src="images/con-card/jellycat.jpg" alt="">
+								<img src="images/con-card/jellycat.jpg" alt="jellycat사의 인형들이 나란한 섬네일이미지입니다">
 							</div>
 							<div class="con-card-logo">
-								<img src="images/logo/jelly-logo.png" alt="">
+								<img src="images/logo/jelly-logo.png" alt="jellycat mobile design">
 							</div>
 							<div class="design-mouse-over">
 								<p class="explain-hd">
@@ -321,6 +339,7 @@
 								<p class="explain-para">
 									Main &amp; Sub page design, Figma
 								</p>
+								<span class="blind">클릭 시 젤리캣 디자인 작업물 상세페이지로 이동합니다</span>
 							</div>
 						</a>
 					</div>
@@ -328,10 +347,10 @@
 					<div class="design-card d02">
 						<a href="https://woogwayeon.github.io/sub_portfolio/sub-design-uniqlo.html" target="_blank">
 							<div class="con-card-img">
-								<img src="images/con-card/uniqlo.jpg" alt="">
+								<img src="images/con-card/uniqlo.jpg" alt="유니클로 매장 모습이 그려진 섬네일일러스트입니다">
 							</div>
 							<div class="con-card-logo">
-								<img src="images/logo/uni-logo.png" alt="">
+								<img src="images/logo/uni-logo.png" alt="uniqlo website redesign">
 							</div>
 							<div class="design-mouse-over">
 								<p class="explain-hd">
@@ -340,6 +359,7 @@
 								<p class="explain-para">
 									Main &#43; Select page design, Photoshop
 								</p>
+								<span class="blind">클릭 시 유니클로 디자인 작업물 상세페이지로 이동합니다</span>
 							</div>
 						</a>
 					</div>
@@ -347,10 +367,10 @@
 					<div class="design-card d03">
 						<a href="https://woogwayeon.github.io/sub_portfolio/sub-design-starcraft2.html" target="_blank">
 							<div class="con-card-img">
-								<img src="images/con-card/star2.jpg" alt="">
+								<img src="images/con-card/star2.jpg" alt="starcraft의 캐릭터 3총사의 얼굴이 그려진 섬네일이미지입니다">
 							</div>
 							<div class="con-card-logo">
-								<img src="images/logo/star2-logo.png" alt="">
+								<img src="images/logo/star2-logo.png" alt="starcraft2 web mainpage publishing">
 							</div>
 							<div class="design-mouse-over">
 								<p class="explain-hd">
@@ -359,6 +379,7 @@
 								<p class="explain-para">
 									Website Mainpage Redesign, Photoshop
 								</p>
+								<span class="blind">클릭 시 스타크래프트2 디자인 작업물 상세페이지로 이동합니다</span>
 							</div>
 						</a>
 					</div>
@@ -366,10 +387,10 @@
 					<div class="design-card d04">
 						<a href="https://woogwayeon.github.io/sub_portfolio/sub-design-DECCA.html" target="_blank">
 							<div class="con-card-img">
-								<img src="images/con-card/decca.jpg" alt="">
+								<img src="images/con-card/decca.jpg" alt="decca의 음악가들이 공연을 하는 모습의 섬네일이미지입니다">
 							</div>
 							<div class="con-card-logo">
-								<img src="images/logo/decca-logo.svg" alt="">
+								<img src="images/logo/decca-logo.svg" alt="decca website mainpage redesign">
 							</div>
 							<div class="design-mouse-over">
 								<p class="explain-hd">
@@ -378,6 +399,7 @@
 								<p class="explain-para">
 									Website Mainpage Redesign, Photoshop
 								</p>
+								<span class="blind">클릭 시 데카 디자인 작업물 상세페이지로 이동합니다</span>
 							</div>
 						</a>
 					</div>
@@ -385,10 +407,10 @@
 					<div class="design-card d05">
 						<a href="https://woogwayeon.github.io/sub_portfolio/sub-design-bazaar.html" target="_blank">
 							<div class="con-card-img">
-								<img src="images/con-card/bazaar.jpg" alt="">
+								<img src="images/con-card/bazaar.jpg" alt="바자르사의 포근한 침구류 섬네일이미지입니다">
 							</div>
 							<div class="con-card-logo">
-								<img src="images/logo/bazaar-logo.svg" alt="">
+								<img src="images/logo/bazaar-logo.svg" alt="bazaar website mainpage redesign">
 							</div>
 							<div class="design-mouse-over">
 								<p class="explain-hd">
@@ -397,6 +419,7 @@
 								<p class="explain-para">
 									Website Mainpage Redesign, Photoshop
 								</p>
+								<span class="blind">클릭 시 바자르(침구 및 리빙용품 사이트) 디자인 작업물 상세페이지로 이동합니다</span>
 							</div>
 						</a>
 					</div>
@@ -404,7 +427,7 @@
 					<div class="design-card d06">
 						<a href="sub-works.html" target="_blank">
 							<div class="con-card-img">
-								<img src="images/con-card/poster.jpg" alt="">
+								<img src="images/con-card/poster.jpg" alt="제작 포스터인 우리나라의 전통놀이 탈춤에 대한 섬네일입니다">
 							</div>
 							<div class="con-card-logo">
 								<p>Poster &amp; Typo</p>
@@ -416,6 +439,7 @@
 								<p class="explain-para">
 									Tradition Poster, Using Design tool
 								</p>
+								<span class="blind">클릭 시 개인 타이포그래피 디자인 작업물 상세페이지로 이동합니다</span>
 							</div>
 						</a>
 					</div>
@@ -469,7 +493,7 @@
 
 						<div class="about">
 							<div class="image">
-								<img src="images/face-cir.svg" alt="미모티콘 프로필">
+								<img src="images/face-cir.svg" alt="서연 미모티콘 표정-웃음">
 							</div>
 							<div class="info">
 								<h3>
@@ -527,6 +551,7 @@
 									<div class="a-heading">
 										<p>HTML5</p>
 									</div>
+									<span class="blind">기술 상세보기</span>
 								</div>
 								<div class="a-card">
 									<div class="a-img">
@@ -535,6 +560,7 @@
 									<div class="a-heading">
 										<p>CSS3</p>
 									</div>
+									<span class="blind">기술 상세보기</span>
 								</div>
 								<div class="a-card">
 									<div class="a-img">
@@ -543,6 +569,7 @@
 									<div class="a-heading">
 										<p>JavaScript</p>
 									</div>
+									<span class="blind">기술 상세보기</span>
 								</div>
 								<div class="a-card">
 									<div class="a-img">
@@ -551,6 +578,7 @@
 									<div class="a-heading">
 										<p>Figma</p>
 									</div>
+									<span class="blind">기술 상세보기</span>
 								</div>
 								<div class="a-card">
 									<div class="a-img">
@@ -559,6 +587,7 @@
 									<div class="a-heading">
 										<p>Photoshop</p>
 									</div>
+									<span class="blind">기술 상세보기</span>
 								</div>
 								<div class="a-card">
 									<div class="a-img">
@@ -567,6 +596,7 @@
 									<div class="a-heading">
 										<p>illustrator</p>
 									</div>
+									<span class="blind">기술 상세보기</span>
 								</div>
 							</div>
 
@@ -579,14 +609,6 @@
 									<span class="att">&ldquo;Character&rdquo;</span> 
 									<span class="json-mark">&#58;&nbsp;&ldquo;&nbsp;</span>
 								</h3>
-								<!--<p>
-									저는 <span class="c-em">기록</span> <span class="material-symbols-rounded orange">edit_calendar</span> 을 좋아하고, <span class="c-em">신뢰</span> <span class="material-symbols-rounded red">volunteer_activism</span> 를 중요하게 생각하는 사람이에요.<br>
-									<span class="c-em">데드라인 엄수</span>를 위해 <span class="c-em">꼼꼼한 계획</span> <span class="material-symbols-rounded yellow">done_outline</span> 과 <span class="c-em">시간 관리</span> <span class="material-symbols-rounded blue">alarm_on</span> 에 항상 힘쓰고 있어요.<br>
-									무서운 일이 생기면 겁나지 않을 때 까지 부딛쳐 해결하는 <span class="c-em">도전 정신</span> <span class="material-symbols-rounded pink">sports_kabaddi</span> <span class="c-em">&#33;</span> <br>
-									&rarr; <span class="c-em">긍정 파워가 넘쳐요</span> <span class="material-symbols-rounded yellow">person_play</span><br>
-									사람들과 조화로운 관계를 추구하기에, 그룹 안에서는 모두와 <span class="c-em">협심</span> <span class="material-symbols-rounded green">psychiatry</span> 하여 <span class="c-em">팀이 얻을 수 있는 최상의 목표를 성취</span>하려 노력해요.
-								</p> -->
-
 								<p>
 									<span class="material-symbols-rounded red">volunteer_activism</span>&nbsp;&nbsp;&nbsp;저는 <span class="c-em">기록</span>을 좋아하고, <span class="c-em">신뢰</span>를 중요하게 생각하는 사람이에요.<br>
 									<span class="material-symbols-rounded blue">alarm_on</span>&nbsp;&nbsp;&nbsp;<span class="c-em">데드라인 엄수</span>를 위해 <span class="c-em">꼼꼼한 계획</span>과 <span class="c-em">시간 관리</span>에 항상 힘쓰고 있어요.<br>
@@ -693,7 +715,7 @@
 							<span class="blind">피그마 디자인툴을 활용해서 할 수 있는 일들을 적어두었습니다.</span>
 							
 							<div class="heading">
-								<img src="images/icon/pentool-icon.svg" alt="develog modal icon">
+								<img src="images/icon/pentool-icon.svg" alt="pentool modal icon">
 								<p><span class="m-figma">Figma</span>의 이런 기능을 활용할 수 있어요</p>
 							</div>
 							<div class="para">
@@ -717,7 +739,7 @@
 							<span class="blind">포토샵 툴을 활용해서 할 수 있는 일들을 적어두었습니다.</span>
 							
 							<div class="heading">
-								<img src="images/icon/pentool-icon.svg" alt="develog modal icon">
+								<img src="images/icon/pentool-icon.svg" alt="pentool modal icon">
 								<p><span class="m-psd">Photoshop</span>의 이런 기능을 활용할 수 있어요</p>
 							</div>
 							<div class="para">
@@ -741,7 +763,7 @@
 						<div class="doit">
 							
 							<div class="heading">
-								<img src="images/icon/pentool-icon.svg" alt="develog modal icon">
+								<img src="images/icon/pentool-icon.svg" alt="pentool modal icon">
 								<p><span class="css-id">illustrator</span>의 이런 기능을 활용할 수 있어요</p>
 							</div>
 							<div class="para">
