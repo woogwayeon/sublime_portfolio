@@ -3,7 +3,8 @@ const mainTab = document.querySelectorAll('.main-tab');
 const tabIcon = document.querySelectorAll('.main-tab .icon');
 const tabColline = document.querySelectorAll('.main-tab .colline');
 const sideNav = document.querySelectorAll('.main-side');
-const langSet = document.querySelectorAll('.footer-inner .lang')
+const langSet = document.querySelectorAll('.footer-inner .lang');
+const skipNav = document.querySelectorAll('.skip')
 
 const mainCon = document.querySelectorAll('.main-content');
 const tabArr = [0, 1, 2, 3];
@@ -64,6 +65,33 @@ for( let i=0; i < tabArr.length; i++){
 
 	//사이드바 탭을 설정하는 함수
 	sideNav[i].addEventListener('click',()=>{
+		mainCon.forEach((e)=>{ e.style.display='none' });
+		mainCon[i].style.display="block";
+		
+		mainTab.forEach((e)=>{ e.style.background="none" });
+		mainTab[i].style.background="#333";
+
+		tabIcon.forEach((e)=>{
+			e.style.transform="rotate(0deg)"
+			e.style.marginTop="0px"
+		});
+		
+		tabIcon[i].style.transform="rotate(90deg)"
+		tabIcon[i].style.marginTop="12px"
+
+		mainCon.forEach((e)=>{ e.style.display='none' });
+		mainCon[i].style.display="block";
+
+		sideNav.forEach((e)=>{e.style.background="none"})
+		sideNav[i].style.background="#444"
+
+		langSet.forEach((e)=>{e.style.display='none'});
+		langSet[i].style.display="block";
+
+	})
+
+	//SKIP navigation 탭을 설정하는 함수
+	skipNav[i].addEventListener('click',()=>{
 		mainCon.forEach((e)=>{ e.style.display='none' });
 		mainCon[i].style.display="block";
 		
