@@ -1,14 +1,14 @@
 
-const mainTab = document.querySelectorAll('.main-tab');
-const tabIcon = document.querySelectorAll('.main-tab .icon');
-const tabColline = document.querySelectorAll('.main-tab .colline');
-const sideNav = document.querySelectorAll('.main-side');
-const langSet = document.querySelectorAll('.footer-inner .lang');
-const skipNav = document.querySelectorAll('.skip')
+let mainTab = document.querySelectorAll('.main-tab');
+let tabIcon = document.querySelectorAll('.main-tab .icon');
+let tabColline = document.querySelectorAll('.main-tab .colline');
+let sideNav = document.querySelectorAll('.main-side');
+let langSet = document.querySelectorAll('.footer-inner .lang');
+let skipNav = document.querySelectorAll('.skip')
 
-const mainCon = document.querySelectorAll('.main-content');
-const tabArr = [0, 1, 2, 3];
-const sectionIds = ['visual', 'works', 'design', 'profile']; 
+let mainCon = document.querySelectorAll('.main-content');
+let tabArr = [0, 1, 2, 3];
+let sectionIds = ['visual', 'works', 'design', 'profile']; 
 
 
 const tabObj = {
